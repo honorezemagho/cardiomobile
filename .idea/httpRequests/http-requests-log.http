@@ -1,0 +1,16 @@
+GET https://cardio.dev/api/contact/medecin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-06-11T031441.200.json
+
+###
+
+GET https://cardio.dev/api/medecin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-06-11T031413.200.json
+
+###
+

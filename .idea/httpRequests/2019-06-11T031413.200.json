@@ -1,0 +1,18 @@
+{
+  "data": [],
+  "links": {
+    "first": "https:\/\/cardio.dev\/api\/medecin?page=1",
+    "last": "https:\/\/cardio.dev\/api\/medecin?page=1",
+    "prev": null,
+    "next": null
+  },
+  "meta": {
+    "current_page": 1,
+    "from": null,
+    "last_page": 1,
+    "path": "https:\/\/cardio.dev\/api\/medecin",
+    "per_page": 15,
+    "to": null,
+    "total": 0
+  }
+}
