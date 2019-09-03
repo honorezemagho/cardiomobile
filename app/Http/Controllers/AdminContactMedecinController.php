@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Available;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -23,7 +24,11 @@ class AdminContactMedecinController extends Controller
     {
         //
         $medecins = Urgence::all();
-        return view('admin.urgence.index', compact('medecins'));
+        $medecins_urgence = Available::where('medecin_id', auth()->id())->value("id");
+        $medecins_urgences = Urgence::where("available_id",$medecins_urgence)->get();
+        $medecins_urgent = Urgence::where("available_id",$medecins_urgence)->value('expires');
+
+        return view('admin.urgence.index', compact('medecins', 'medecins_urgences', 'medecins_urgent'));
     }
 
 

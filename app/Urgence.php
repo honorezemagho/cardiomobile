@@ -3,15 +3,12 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Ville;
-use App\Quartier;
-use App\Medecin;
-use App\Transaction;
+
 
 class Urgence extends Model
 {
     protected $fillable = ['name','quartier_id', 'ville_id', 'phone', 'description', 'medecin_matricule', 'medecin_phone', 'shortcode'
-        , 'datetime', 'transaction_id', 'expires', 'meeting_datetime', 'urgence_type'];
+        , 'datetime', 'transaction_id', 'expires', 'available_id', 'urgence_type'];
 
     public function quartier(){
 
@@ -39,4 +36,25 @@ class Urgence extends Model
         return $this->belongsTo('App\Transaction');
 
     }
+
+    public function medecin(){
+
+        return $this->belongsTo('App\Medecin');
+
+    }
+
+
+    public function payment(){
+
+        return $this->belongsTo('App\Payment');
+
+    }
+
+    public function available(){
+
+        return $this->belongsTo('App\Available');
+
+    }
+
+
 }

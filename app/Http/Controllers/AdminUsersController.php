@@ -2,9 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use
-Illuminate\Http\Request;
-
 use App\Http\Requests;
 use App\User;
 use App\Role;
@@ -151,7 +148,7 @@ class AdminUsersController extends Controller
 
         $user->update($input);
 
-        Session::flash('deleted_user', 'The user profile has been updated successfully');
+        Session::flash('deleted_user', 'Le profil a été mis à jour avec succès');
 
         return redirect('/admin/users');
     }

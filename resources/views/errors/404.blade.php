@@ -42,7 +42,7 @@
     <div class="container p-40 ">
         <div class="row">
             <div class="col-md-12 text-center">
-                <p class="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script> ThemeMascot. All Rights Reserved</p>
+                <p class="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script> CARDIOMOBILE. Tout Droits Réservés</p>
             </div>
         </div>
     </div>

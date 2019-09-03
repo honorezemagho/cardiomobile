@@ -10,7 +10,13 @@ use App\Structure;
 
 class Medecin extends Model
 {
-    protected $fillable = ['name', 'ville_id', 'quartier_id', 'phone', 'matricule', 'email'];
+    protected $fillable = ['name', 'ville_id', 'quartier_id', 'phone', 'matricule', 'email', 'quartier_medecin_id', 'datetime'];
+    protected $dates = [
+        'created_at',
+        'updated_at',
+        'deleted_at',
+        'datetime',
+    ];
 
     public function quartier(){
 

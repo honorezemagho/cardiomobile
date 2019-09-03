@@ -5,6 +5,15 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Role;
+use App\Ville;
+use App\Quartier;
+use App\Photo;
+use App\Post;
+use App\Medecin;
+use App\Available;
+use App\matricule;
+use App\Hopital;
 
 class User extends Authenticatable
 {
@@ -16,7 +25,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password','phone','is_active','role_id','email_verified_at', 'api_token'
+        'name', 'email', 'password','phone','is_active','role_id','email_verified_at', 'api_token', 'photo_id', 'medecin_id'
     ];
 
     /**
@@ -76,5 +85,20 @@ class User extends Authenticatable
 
         }
         return false;
+    }
+
+    public  function isMedecin(){
+
+        if($this->role->name == 'Medecins'){
+
+            return true;
+
+        }
+        return false;
+    }
+
+    public  function medecin(){
+
+       return $this->belongsTo('App\Medecin');
     }
 }

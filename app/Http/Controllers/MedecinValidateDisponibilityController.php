@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Available;
 use App\Medecin;
 use App\Transaction;
 use App\Urgence;
@@ -110,15 +111,16 @@ class MedecinValidateDisponibilityController extends Controller
         $id = Urgence::where('transaction_id', $ids)->value('id');
         $locale = 'fr_FR';
         $patient_name = Urgence::where('transaction_id', $ids)->value('name');
-        $patient_datetime_first = Urgence::where('transaction_id', $ids)->value('meeting_datetime');
-        $patient_datetime = Carbon::parse($patient_datetime_first)->toDateTimeString();
+        $patient_datetime_first = Urgence::where('transaction_id', $ids)->value('available_id');
+        $patient_datetime_second = Available::where('id', $patient_datetime_first)->value('datetime');
+        $patient_datetime = Carbon::parse($patient_datetime_second)->toDateTimeString();
        $patient_date = Carbon::parseFromLocale($patient_datetime,$locale)->IsoFormat(' Do MMMM YYYY');
-        $patient_heure = Carbon::parseFromLocale($patient_datetime,$locale)->IsoFormat('h:mm');
+        $patient_heure = Carbon::parseFromLocale($patient_datetime,$locale)->toTimeString();
         $patient_phone = Urgence::where('transaction_id', $ids)->value('phone');
         $send_message = 'Bonjour M.'.$patient_name .', votre rendez-vous a été confirmé à la clinique Coeur et Vie le '
             . $patient_date .' à '. $patient_heure ;
-/*
-        $send = "http://5.39.75.139:22140/message?user=digis&pass=digis123&from=8002&to=+237$patient_phone
+
+       /* $send = "http://5.39.75.139:22140/message?user=digis&pass=digis123&from=8002&to=+237$patient_phone
         &text=".$send_message."&dlrreq=1";
 
               $client = new \GuzzleHttp\Client();
@@ -126,9 +128,8 @@ class MedecinValidateDisponibilityController extends Controller
         // Create a request
            $request = $client->get($send);
         // Get the actual response without headers
-         $response = $request->getBody();
+         $response = $request->getBody();*/
 
-         return $response;*/
 
         if (Transaction::Where('transaction', $request['transaction'])->exists() &
             Medecin::Where('matricule', $request['matricule'])->exists() &

@@ -17,7 +17,7 @@ return [
 
     'title_prefix' => '',
 
-    'title_postfix' => ',  La solution N°1 pour le transport des malades au Cameroun',
+    'title_postfix' => ',  La Solution N°1 Camerounaise dédié à votre santé CARDIOVASCULAIRE',
 
     /*
     |--------------------------------------------------------------------------
@@ -147,6 +147,8 @@ return [
             ],
         ],
 
+
+
         'PLATEFORME',
         [
             'text'    => 'Utilisateurs',
@@ -160,7 +162,6 @@ return [
                     'icon_color' => 'blue',
                 ],
                 [
-                    'can' => 'is_admin',
                     'text'    => 'Ajouter un utilisateur',
                     'url'     => 'admin/users/create',
                     'icon_color' => 'yellow',
@@ -168,6 +169,44 @@ return [
             ],
         ],
 
+        [
+            'text'    => 'Roles',
+            'url'     => "admin/roles",
+            'icon'    => 'users',
+            'can' => 'is_admin',
+            'submenu' => [
+                [
+                    'text' => 'Afficher',
+                    'url'  => 'admin/roles',
+                    'icon_color' => 'blue',
+                ],
+                [
+                    'text'    => 'Ajouter un role',
+                    'url'     => 'admin/roles/create',
+                    'icon_color' => 'yellow',
+                ],
+            ],
+        ],
+
+
+        [
+            'text'    => 'Paiements',
+            'url'     => "admin/payments",
+            'icon'    => 'money',
+            'can' => 'is_admin',
+            'submenu' => [
+                [
+                    'text' => 'Afficher',
+                    'url'  => 'admin/payments',
+                    'icon_color' => 'blue',
+                ],
+                [
+                    'text'    => 'Ajouter un prix',
+                    'url'     => 'admin/payments/create',
+                    'icon_color' => 'yellow',
+                ],
+            ],
+        ],
 
         [
             'text'    => 'Ville',
@@ -217,12 +256,59 @@ return [
                     'text' => 'Afficher',
                     'url'  => 'admin/medecin',
                     'icon_color' => 'blue',
-
+                    'can' => 'is_admin',
                 ],
                 [
                     'text'    => 'Ajouter un nouveau medecin',
                     'url'     => 'admin/medecin/create',
                     'icon_color' => 'blue',
+                    'can' => 'is_admin',
+                ],
+
+                [
+                    'text'    => 'Utilisateurs',
+                    'url'     => 'admin/becomeuser/medecin',
+                    'icon_color' => 'blue',
+
+                    'submenu' => [
+
+                        [
+                            'text'    => 'Les Afficher',
+                            'url'     => 'admin/becomeuser/medecin',
+                            'icon_color' => 'blue',
+                            'can' => 'is_admin',
+                        ],
+
+                        [
+                            'text'    => 'Définir Comme Utilisateur',
+                            'url'     => 'admin/becomeuser/medecin/create',
+                            'icon_color' => 'blue',
+                            'can' => 'is_admin',
+                        ],
+                    ],
+                ],
+
+
+                [
+                    'text'    => 'Disponibilité',
+                    'url'     => 'admin/medecin/available',
+                    'icon_color' => 'blue',
+
+                'submenu' => [
+                    [
+                        'text' => 'Afficher',
+                        'icon' => 'user',
+                        'url'     => 'admin/medecin/available',
+                        'can' => 'is_admin',
+                    ],
+                    [
+                        'text' => 'Ajouter une disponibilité',
+                        'icon' => 'user',
+                        'url'     => 'admin/medecin/available/create',
+                        'can' => 'is_admin'
+
+                    ],
+                ],
                 ],
             ],
         ],
@@ -234,7 +320,6 @@ return [
             'url'     => 'admin/medecin',
             'can' => 'is_gestionnaire',
             'submenu' => [
-
                 [
                     'text' => 'Afficher',
                     'url'  => 'admin/medecin',
@@ -245,8 +330,51 @@ return [
                     'url'     => 'admin/medecin/create',
                     'icon_color' => 'blue',
                 ],
+
+                [
+                    'text'    => 'Utilisateurs',
+                    'url'     => 'admin/becomeuser/medecin',
+                    'icon_color' => 'blue',
+
+                    'submenu' => [
+
+                        [
+                            'text'    => 'Les Afficher',
+                            'url'     => 'admin/becomeuser/medecin',
+                            'icon_color' => 'blue',
+                        ],
+
+                        [
+                            'text'    => 'Définir Comme Utilisateur',
+                            'url'     => 'admin/becomeuser/medecin/create',
+                            'icon_color' => 'blue',
+                        ],
+                    ],
+                ],
+
+
+                [
+                    'text'    => 'Disponibilité',
+                    'url'     => 'admin/medecin/available',
+                    'icon_color' => 'blue',
+
+                    'submenu' => [
+                        [
+                            'text' => 'Afficher',
+                            'icon' => 'user',
+                            'url'     => 'admin/medecin/available',
+                        ],
+                        [
+                            'text' => 'Ajouter une disponibilité',
+                            'icon' => 'user',
+                            'url'     => 'admin/medecin/available/create',
+                        ],
+                    ],
+                ],
             ],
         ],
+
+
 
         [
             'text'    => 'Structures Hospitalières',
@@ -441,13 +569,29 @@ return [
             'can' => 'is_medecin',
             'submenu' => [
                 [
+                    'text'    => 'Mes Urgences',
+                    'url'     => '/admin/urgences',
+                    'icon_color' => 'red',
+                ],
+            ],
+        ],
+
+
+        [
+            'text'    => 'Disponibilité Médecins',
+            'url'     => 'admin/medecin/available',
+            'icon'   => 'user-md',
+            'icon_color' => 'blue',
+            'can' => 'is_medecin',
+            'submenu' => [
+                [
                     'text' => 'Afficher',
-                    'url'  => 'admin/urgences',
+                    'url'  => 'admin/medecin/available',
                     'icon_color' => 'blue',
                 ],
                 [
-                    'text'    => 'Mes Urgences',
-                    'url'     => '#',
+                    'text'    => 'Ajouter une disponibilité',
+                    'url'     => 'admin/medecin/available/create',
                     'icon_color' => 'red',
                 ],
             ],

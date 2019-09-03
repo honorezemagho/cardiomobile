@@ -38,7 +38,7 @@ class MedecinsTableSeeder extends Seeder
         ],
         [
 
-            'name' => 'Arnaud Fonkou',
+            'name' => 'NDJOMOU ARMEL ',
             'ville_id' => 2,
             'quartier_id' => 3,
             'phone' => 673004966,

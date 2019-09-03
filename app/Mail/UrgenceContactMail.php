@@ -17,13 +17,11 @@ class UrgenceContactMail extends Mailable
      * @return void
      */
 public $data;
-public $string;
 
     public function __construct( $data)
     {
         //
         $this->data = $data;
-
 
     }
 

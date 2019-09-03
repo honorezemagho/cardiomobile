@@ -5,11 +5,10 @@
     <!-- Meta Tags -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <meta name="description" content="CARDIOMOBILE | La Solution N°1 pour le transport des malades au Cameroun" />
+    <meta name="description" content="CARDIOMOBILE | La Solution N°1 Camerounaise dédié à votre santé CARDIOVASCULAIRE" />
     <meta name="keywords" content="CARDIOMOBILE,cardiomobile,Ambulance Cameroun,Cameroun Ambulance, Rendez -vous Médécin,
-CARDIOmobile, cardioMOBILE, AMBULANCE DOUALA, DOUALA AMBULANCE, YAOUNDE AMBULANCE, AMBULANCE YAOUNDE" />
+CARDIOmobile, cardioMOBILE, AMBULANCE DOUALA, DOUALA AMBULANCE, YAOUNDE AMBULANCE, AMBULANCE YAOUNDE, cardiovasculaire cameroun, CARDIOVASCULAIRE CAMEROUN" />
     <meta name="author" content="Honorezemagho"/>
-
     <!-- Page Title -->
     <title>CARDIOMOBILE | La Solution N°1 pour le transport des malades au Cameroun</title>
 
@@ -23,7 +22,7 @@ CARDIOmobile, cardioMOBILE, AMBULANCE DOUALA, DOUALA AMBULANCE, YAOUNDE AMBULANC
     <!-- Stylesheet -->
     <link href="{{ asset('dentalpro/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('dentalpro/css/jquery-ui.min.css') }}" rel="stylesheet" type="text/css">
-    <link href="c{{ asset('dentalpro/css/animate.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('dentalpro/css/animate.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('dentalpro/css/css-plugin-collections.css') }}" rel="stylesheet"/>
     <link href="{{ asset('dentalpro/css/social-share.css') }}" rel="stylesheet"/>
     <link href="{{ asset('dentalpro/css/timepicker.less') }}" rel="stylesheet"/>
@@ -37,7 +36,7 @@ CARDIOmobile, cardioMOBILE, AMBULANCE DOUALA, DOUALA AMBULANCE, YAOUNDE AMBULANC
     <!-- CSS | Custom Margin Padding Collection -->
     <link href="{{ asset('dentalpro/css/custom-bootstrap-margin-padding.css') }}" rel="stylesheet" type="text/css">
     <!-- CSS | Responsive media queries -->
-    <link href="c{{ asset('dentalpro/css/responsive.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('dentalpro/css/responsive.css') }}" rel="stylesheet" type="text/css">
     <!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
     <!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
 
@@ -77,7 +76,6 @@ CARDIOmobile, cardioMOBILE, AMBULANCE DOUALA, DOUALA AMBULANCE, YAOUNDE AMBULANC
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-
 
     <style>
         .btn-theme-colored,  .bg-theme-colored ,.text-theme-colored {

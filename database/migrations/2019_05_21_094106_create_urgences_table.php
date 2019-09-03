@@ -19,13 +19,15 @@ class CreateUrgencesTable extends Migration
             $table->integer('ville_id');
             $table->integer('quartier_id');
             $table->integer('phone');
-            $table->timestamp('meeting_datetime');
+            $table->integer('available_id')->nullable();
             $table->text('description');
             $table->string('urgence_type')->nullable();
             $table->string('medecin_matricule')->nullable();
             $table->integer('medecin_phone')->nullable();
             $table->integer('transaction_id');
-            $table->string('expires')->default(0);
+            $table->integer('payment_id')->nullable();
+            $table->integer('expires')->default(0);
+            $table->integer('payment_status')->default(0);
             $table->timestamps();
         });
     }

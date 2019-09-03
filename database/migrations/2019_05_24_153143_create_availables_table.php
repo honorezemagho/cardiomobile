@@ -15,7 +15,10 @@ class CreateAvailablesTable extends Migration
     {
         Schema::create('availables', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('time');
+            $table->timestamp('datetime')->unique();
+            $table->integer('medecin_id');
+            $table->integer('quartier_id');
+            $table->integer('expires')->default(0);
             $table->timestamps();
         });
     }

@@ -43,6 +43,17 @@ class UsersTableSeeder extends Seeder
                   'phone' => 673004266,
                   'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                   'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
-              ]]);
+              ],
+              [
+                  'name' => 'BEST FRANKLIN',
+                  'role_id' => 4,
+                  'is_active' => 1,
+                  'email' => 'something@free.fr',
+                  'password' => bcrypt('07081999A'),
+                  'phone' => 673004266,
+                  'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                  'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+              ]
+              ]);
     }
 }

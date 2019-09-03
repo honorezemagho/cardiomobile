@@ -5,7 +5,7 @@
       <webServer id="00ebc1f8-8a35-4ecb-8134-3c6d83d88c56" name="CARDIOMOBILE" url="http://ftp.mydigis.com">
         <fileTransfer host="ftp.mydigis.com" port="21">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" showHiddenFiles="true" />
           </advancedOptions>
           <option name="port" value="21" />
         </fileTransfer>

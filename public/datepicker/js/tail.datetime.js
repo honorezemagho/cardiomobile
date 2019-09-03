@@ -144,14 +144,14 @@
         startOpen: false,               // [0.3.0]          Boolean
         stayOpen: false,                // [0.3.0]          Boolean
         time12h: false,                 // [0.4.13][NEW]    Boolean
-        timeFormat: "HH:ii:ss",         // [0.1.0]          String (PHP similar Date)
+        timeFormat: "HH:ii",         // [0.1.0]          String (PHP similar Date)
         timeHours: true,                // [0.4.13][UPD]    Integer, Boolean, null
         timeMinutes: true,              // [0.4.13][UPD]    Integer, Boolean, null
         timeSeconds: 0,                 // [0.4.13][UPD]    Integer, Boolean, null
         timeIncrement: true,            // [0.4.5]          Boolean
         timeStepHours: 1,               // [0.4.3]          Integer
-        timeStepMinutes: 5,             // [0.4.3]          Integer
-        timeStepSeconds: 5,             // [0.4.3]          Integer
+        timeStepMinutes: 30,             // [0.4.3]          Integer
+        timeStepSeconds: 30,             // [0.4.3]          Integer
         today: true,                    // [0.4.0]          Boolean
         tooltips: [],                   // [0.4.0]          Array
         viewDefault: "days",            // [0.4.0]          String
@@ -167,10 +167,10 @@
      */
     datetime.strings = {
         en: {
-            months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-            days:   ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-            shorts: ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"],
-            time:   ["Hours", "Minutes", "Seconds"],
+            months: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aôut", "Septembre", "Octobre", "Novembre", "Decembre"],
+            days:   ["Dimanche", "Lundi", "Tuesday", "Mardi", "Mercredi", "Jeudi", "Vendredi"],
+            shorts: ["LUN", "MAR", "MER", "JEU", "VEN", "SAM", "DIM"],
+            time:   ["Heures", "Minutes", "Secondes"],
             header: ["Select a Month", "Select a Year", "Select a Decade", "Select a Time"]
         },
         modify: function(locale, id, string){

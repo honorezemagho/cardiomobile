@@ -2,7 +2,7 @@
 @extends('adminlte::page')
 @section('content')
 
-<h2 class="text-center"><span class="text-theme-colored text-center align-content-center" style="text-align: center">Définir votre itinéraire </span></h2>
+<h2 class="text-center"><span class="text-theme-colored2 text-center align-content-center" style="text-align: center">Définir votre itinéraire </span></h2>
 <script src="{{asset('js/custom2.js')}}"></script>
 <div class="container col-sm-12">
     <div class="row equal-height">

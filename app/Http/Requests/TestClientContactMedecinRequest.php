@@ -28,10 +28,8 @@ class TestClientContactMedecinRequest extends FormRequest
             'name' => 'required',
             'ville_id' => 'required',
             'quartier_id' => 'required',
-            'meeting_datetime' => 'required',
             'phone' => 'required|min:9',
             'description' => 'required',
-            'payment_method' => 'required',
             'urgence_type' => 'required',
 
         ];

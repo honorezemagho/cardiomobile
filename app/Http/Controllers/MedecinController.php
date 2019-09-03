@@ -42,7 +42,6 @@ class MedecinController extends Controller
      */
     public function store(Requests\MedecinCreateRequest $request)
     {
-        //
         $input = $request->all();
         return $input;
 

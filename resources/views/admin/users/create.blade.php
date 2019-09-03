@@ -11,7 +11,6 @@
      {!! Form::text('name', null, ['class' => 'form-control']) !!}
   </div>
 
-
  <div class = "form-group">
   {!! Form::label('email', 'Email:') !!}
   {!! Form::email('email', null, ['class' => 'form-control']) !!}
@@ -35,7 +34,7 @@
 
 
  <div class = "form-group">
-     {!! Form::label('photo_id', 'Veuillez uploder une photo') !!}
+     {!! Form::label('photo_id', 'Veuillez uploader une photo') !!}
      {!! Form::file('photo_id', null, ['class' => 'form-control']) !!}
  </div><br>
 
