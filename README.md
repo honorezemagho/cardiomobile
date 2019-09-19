@@ -1,2 +1,0 @@
-# cardiomobile
-Some Cool App
