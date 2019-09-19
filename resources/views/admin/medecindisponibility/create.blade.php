@@ -1,4 +1,4 @@
-@extends('adminlte::page');
+@extends('adminlte::page')
 @section('content')
     <h1 style="text-align: center">  Ajouter une disponibilité </h1>
     <!-- CSS | Theme Color -->
@@ -29,7 +29,7 @@
 
     @can('is_medecin')
         <div class = "form-group">
-            <input type="hidden" value="{{Auth::user()->id}}" name="medecin_id">
+            <input type="hidden" value="{{Auth::user()->medecin_id}}" name="medecin_id">
         </div>
     @endcan
 

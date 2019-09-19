@@ -18,8 +18,6 @@ class MedecinDisponibilityController extends Controller
      */
     public function index()
     {
-        //
-
 
         return view('admin.medecindisponibility.index');
     }
@@ -53,6 +51,10 @@ class MedecinDisponibilityController extends Controller
         $request['datetime'] = Carbon::parse($request['datetime'])->toDateTimeString();
 
         $request['quartier_id'] = Medecin::where('id', $request['medecin_id'])->value('quartier_id');
+
+        $request['type_id'] = Medecin::where('id', $request['medecin_id'])->value('type_id');
+
+        $request['speciality_id'] = Medecin::where('id', $request['medecin_id'])->value('speciality_id');
 
         $data = $request->validate([
             'medecin_id' => [

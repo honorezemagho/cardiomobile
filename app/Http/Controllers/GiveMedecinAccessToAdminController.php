@@ -34,7 +34,6 @@ class GiveMedecinAccessToAdminController extends Controller
     {
         //
         $roles = Role::pluck('name', 'id')->forget(['id' => '1'])->all();
-        Session::flash('deleted_user', 'Opération Réalisée avec succès');
         return view('admin.users.medecin.create', compact('roles'));
     }
 
@@ -48,16 +47,14 @@ class GiveMedecinAccessToAdminController extends Controller
     {
         //
         $message = [
-            'email.required' => " L'email du Médecin est requis!",
             'medecin_id.required' => "L'id du Médecin est requis!",
             'role_id.required' => 'Le rôle est requis!',
             'is_active.required' => 'Le Statut est requis!',
             'password.required' => 'Le Mot de passe est requis!',
-            'medecin_id.existe' => 'Ce Medecin Id est Inexistant!',
+            'medecin_id.exists' => 'Ce Medecin Id est Inexistant!',
         ];
 
              $data = $request->validate([
-                    'email' => 'required',
                     'medecin_id' => [
                     'required',
                     Rule::exists('medecins', 'id')->where(function ($query) use ($request) {
@@ -68,6 +65,11 @@ class GiveMedecinAccessToAdminController extends Controller
                      'is_active' => 'required',
                     'password' => 'required',
                         ], $message);
+
+
+             $request['email'] = Medecin::where('id', $request['medecin_id'])->value('email');
+            $request['phone'] = Medecin::where('id', $request['medecin_id'])->value('phone');
+            $request['name'] = Medecin::where('id', $request['medecin_id'])->value('name');
 
         if(trim($request->password) == ''){
 

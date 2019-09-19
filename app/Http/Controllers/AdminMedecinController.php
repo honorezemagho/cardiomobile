@@ -5,12 +5,16 @@ namespace App\Http\Controllers;
 use App\Hopital;
 use App\Http\Requests\MedecinCreateRequest;
 use App\Medecin;
+use App\MedecinsType;
 use App\Quartier;
+use App\Speciality;
 use App\Ville;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use DB;
+use Illuminate\Support\Facades\Session;
+
 class AdminMedecinController extends Controller
 {
     /**
@@ -39,7 +43,10 @@ class AdminMedecinController extends Controller
         $b = 1;
         $mat = $matricule + $b;
         $matricules = 'Med'.$mat;
-        return view('admin.medecin.create', compact('villes', 'quartiers', 'matricules'));
+        $speciality = Speciality::pluck('speciality', 'id')->all();
+        $types = MedecinsType::pluck('name', 'id')->all();
+        return view('admin.medecin.create', compact('villes', 'quartiers', 'matricules', 'speciality'
+        , 'types'));
     }
 
     public function getStates($id) {
@@ -81,7 +88,13 @@ class AdminMedecinController extends Controller
     public function edit($id)
     {
         //
-        return view('admin.medecin.edit');
+        $medecins = Medecin::findOrFail($id);
+        $villes = Ville::pluck('name', 'id')->all();
+        $quartiers = Quartier::pluck('name', 'id')->all();
+        $speciality = Speciality::pluck('speciality', 'id')->all();
+        $types = MedecinsType::pluck('name', 'id')->all();
+
+        return view('admin.medecin.edit', compact('medecins', 'villes','quartiers','speciality','types'));
     }
 
     /**
@@ -94,7 +107,13 @@ class AdminMedecinController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $medecins = Medecin::findOrFail($id);
 
+        $input = $request->all();
+
+        $medecins->update($input);
+
+        return redirect('admin/medecin');
     }
 
     /**
@@ -106,6 +125,12 @@ class AdminMedecinController extends Controller
     public function destroy($id)
     {
         //
+        $medecins = Medecin::findOrFail($id);
 
+        $medecins->delete();
+
+        Session::flash('deleted_payment', 'Cette Médecin a été supprimée avec succès');
+
+        return redirect('admin/medecins');
     }
 }

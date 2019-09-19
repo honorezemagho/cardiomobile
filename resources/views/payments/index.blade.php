@@ -21,15 +21,16 @@
             @foreach($payments as $payment)
                 <tr>
                     <td> {{$payment->id}} </td>
-                    <td><a href="{{ URL::action('PaymentController@edit',  $payment->id) }}">{{ $payment->name}}</a></td>
+                    <td class="visible-xs"><a href="{{ URL::action('PaymentController@edit',  $payment->id) }}">{{ $payment->name}}</a></td>
+                    <td class="hidden-xs">{{ $payment->name}}</td>
                     <td> {{$payment->price}}</td>
                     <td> {{$payment->details}}</td>
-                 {{--   <td>  <a class="btn btn-info" href="{{ route('admin.payments.show',$payment->id) }}">Voir</a>
-                        <a class="btn btn-primary" href="{{ route('admin.payments.edit',$payment->id) }}">Modifier</a>
-                        {!! Form::open(['method' => 'DELETE','route' => ['admin.payments.destroy', $payment->id],'style'=>'display:inline']) !!}
-                        {!! Form::submit('Supprimer', ['class' => 'btn btn-danger']) !!}
+                   <td>
+                        <a class="btn btn-primary" href="{{ URL::action('PaymentController@edit',  $payment->id) }}">Modifier</a>
+                        {!! Form::open(['method' => 'DELETE','action' => ['PaymentController@destroy', $payment->id],'style'=>'display:inline']) !!}
+                        {!! Form::submit('Supprimer', ['class' => 'btn btn-danger inline']) !!}
                         {!! Form::close() !!}
-                    </td>--}}
+                    </td>
                 </tr>
             @endforeach
         @endif

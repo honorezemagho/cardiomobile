@@ -14,25 +14,21 @@ CARDIOmobile, cardioMOBILE, AMBULANCE DOUALA, DOUALA AMBULANCE, YAOUNDE AMBULANC
 
     <!-- Favicon and Touch Icons -->
     <link href="{{ asset('dentalpro/images/favicon.png') }}" rel="shortcut icon" type="image/png">
-    <link href="{{ asset('dentalpro/images/apple-touch-icon.png') }}" rel="apple-touch-icon">
-    <link href="{{ asset('dentalpro/images/apple-touch-icon-72x72.png') }}" rel="apple-touch-icon" sizes="72x72">
-    <link href="{{ asset('dentalpro/images/apple-touch-icon-114x114.png') }}" rel="apple-touch-icon" sizes="114x114">
-    <link href="{{ asset('dentalpro/images/apple-touch-icon-144x144.png') }}" rel="apple-touch-icon" sizes="144x144">
+    <link href="{{ asset('dentalpro/images/favicon.png') }}" rel="apple-touch-icon">
+    <link href="{{ asset('dentalpro/images/favicon.png') }}" rel="apple-touch-icon" sizes="72x72">
+    <link href="{{ asset('dentalpro/images/favicon.png') }}" rel="apple-touch-icon" sizes="114x114">
+    <link href="{{ asset('dentalpro/images/favicon.png') }}" rel="apple-touch-icon" sizes="144x144">
 
     <!-- Stylesheet -->
     <link href="{{ asset('dentalpro/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('dentalpro/css/jquery-ui.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('dentalpro/css/animate.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('dentalpro/css/css-plugin-collections.css') }}" rel="stylesheet"/>
-    <link href="{{ asset('dentalpro/css/social-share.css') }}" rel="stylesheet"/>
-    <link href="{{ asset('dentalpro/css/timepicker.less') }}" rel="stylesheet"/>
     <!-- CSS | menuzord megamenu skins -->
     <link href="{{ asset('dentalpro/css/menuzord-skins/menuzord-gradient.css') }}" rel="stylesheet"/>
     <link id="menuzord-menu-skins" href="{{ asset('dentalpro/css/menuzord-skins/menuzord-border-boxed.css') }}" rel="stylesheet"/>
     <!-- CSS | Main style file -->
     <link href="{{ asset('dentalpro/css/style-main.css') }}" rel="stylesheet" type="text/css">
-    <!-- CSS | Preloader Styles -->
-    <link href="{{ asset('dentalpro/css/preloader.css') }}" rel="stylesheet" type="text/css">
     <!-- CSS | Custom Margin Padding Collection -->
     <link href="{{ asset('dentalpro/css/custom-bootstrap-margin-padding.css') }}" rel="stylesheet" type="text/css">
     <!-- CSS | Responsive media queries -->
@@ -41,9 +37,9 @@ CARDIOmobile, cardioMOBILE, AMBULANCE DOUALA, DOUALA AMBULANCE, YAOUNDE AMBULANC
     <!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
 
     <!-- Revolution Slider 5.x CSS settings -->
-    <link  href="{{ asset('dentalpro/js/revolution-slider/css/settings.css') }}" rel="stylesheet" type="text/css"/>
+{{--    <link  href="{{ asset('dentalpro/js/revolution-slider/css/settings.css') }}" rel="stylesheet" type="text/css"/>
     <link  href="{{ asset('dentalpro/js/revolution-slider/css/layers.css') }}" rel="stylesheet" type="text/css"/>
-    <link  href="{{ asset('dentalpro/js/revolution-slider/css/navigation.css') }}" rel="stylesheet" type="text/css"/>
+    <link  href="{{ asset('dentalpro/js/revolution-slider/css/navigation.css') }}" rel="stylesheet" type="text/css"/>--}}
 
     <!-- CSS | Theme Color -->
     <link href="{{ asset('dentalpro/css/colors/theme-skin-color-set1.css') }}" rel="stylesheet" type="text/css">
@@ -57,11 +53,6 @@ CARDIOmobile, cardioMOBILE, AMBULANCE DOUALA, DOUALA AMBULANCE, YAOUNDE AMBULANC
     <script src="{{ asset('js/jquery-steps.min.js') }}"></script>
     <!-- JS | jquery plugin collection for this theme -->
     <script src="{{ asset('dentalpro/js/jquery-plugin-collection.js') }}"></script>
-
-    <!-- Revolution Slider 5.x SCRIPTS -->
-    <script src="{{ asset('dentalpro/js/revolution-slider/js/jquery.themepunch.tools.min.js') }}"></script>
-    <script src="{{ asset('dentalpro/js/revolution-slider/js/jquery.themepunch.revolution.min.js') }}"></script>
-
 
     <link rel="stylesheet" href="{{ asset('wizard/css/step-form-wizard-all.css') }}" type="text/css" media="screen, projection">
 
@@ -85,4 +76,5 @@ CARDIOmobile, cardioMOBILE, AMBULANCE DOUALA, DOUALA AMBULANCE, YAOUNDE AMBULANC
         }
     </style>
     <![endif]-->
+
 </head>

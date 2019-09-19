@@ -18,6 +18,8 @@ class CreateAvailablesTable extends Migration
             $table->timestamp('datetime')->unique();
             $table->integer('medecin_id');
             $table->integer('quartier_id');
+            $table->integer('type_id');
+            $table->integer('speciality_id');
             $table->integer('expires')->default(0);
             $table->timestamps();
         });

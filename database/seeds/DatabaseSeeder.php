@@ -21,6 +21,10 @@ class DatabaseSeeder extends Seeder
             MedecinsTableSeeder::class,
             // DisponibilityTableSeeder::class,
             AmbulancesTableSeeder::class,
+            PaymentTableSeeder::class,
+            AvailableTableSeeder::class,
+            SpecialityTableSeeder::class,
+            MedecinTypeTableSeeder::class,
         ]);
     }
 }

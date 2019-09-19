@@ -23,7 +23,7 @@
                                     <div class="body-content">
                                         <div class="row">
                                                 <div class="col-md-12">
-                        {!! Form::open(['method' =>'POST', 'action' => 'TestClientContactCliniqueController@store', 'class' => 'bg-theme-colored p-30', 'id' => 'wizard_example']) !!}
+                        {!! Form::open(['method' =>'POST', 'action' => 'UrgenceFormReceivingMedecinController@store', 'class' => 'bg-theme-colored p-30', 'id' => 'wizard_example']) !!}
                         <h3 class="mt-0 text-white mb-20 text-center">MEDECIN D'URGENCE</h3>
                             <h4 class="mt-0 text-white mb-20 text-center"><i>Vous Souhaitez Prendre un de RDV?</i></h4>
 
@@ -67,7 +67,7 @@
                                         'placeholder' => "Description Ici"]) !!}
                                  </div>
 
-                                <div class="form-group mb-10 text-theme-colored text-center">
+                             <div class="form-group mb-10 text-theme-colored text-center">
 
                                         <div class="custom-control custom-radio mb-10">
                                             <input class="custom-control-input" type="radio" name="urgence_type" id="example-radio2" value="clinique">

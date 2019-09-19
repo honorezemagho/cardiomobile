@@ -77,7 +77,7 @@
 
 
 
-            {!! Form::open(['method' => 'DELETE', 'action' => ['AdminUsersController@destroy', $user->id], 'class'=>'btn-group mr-2']) !!}
+            {!! Form::open(['method' => 'DELETE', 'action' => ['AdminUsersController@destroy', $user->id], 'class'=>'btn-group mr-2 visible-xs']) !!}
 
 
                 {!! Form::Submit ('Supprimer', ['class' => 'btn btn-danger ' ], ['data-toggle' => 'modal'],['data-target' => '.bd-example-modal-lg']  ) !!}

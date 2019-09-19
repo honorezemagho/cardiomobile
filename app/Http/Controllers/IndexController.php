@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Available;
 use Illuminate\Http\Request;
 use App\Ville;
 use App\Quartier;
@@ -99,4 +100,48 @@ class IndexController extends Controller
     {
         //
     }
+
+
+    public function manual()
+    {
+        //
+        return view('home.manual');
+    }
+
+
+    public function contact()
+    {
+        //
+        return view('contact.create');
+    }
+
+
+    public function admin()
+    {
+        //
+        return view('admin.index');
+    }
+
+
+    public function disponibility()
+    {
+        //
+        return view('urgence_type.test');
+    }
+
+
+    public function speciality()
+    {
+        //
+        return view('urgence.index');
+    }
+
+
+    public function paginate()
+    {
+        //
+        $data = Available::paginate(5);
+        return view('paginate.test', compact('data'));
+    }
+
 }

@@ -166,27 +166,29 @@ return [
                     'url'     => 'admin/users/create',
                     'icon_color' => 'yellow',
                 ],
+
+                [
+                    'text'    => 'Roles',
+                    'url'     => "admin/roles",
+                    'icon'    => 'users',
+                    'can' => 'is_admin',
+                    'submenu' => [
+                        [
+                            'text' => 'Afficher',
+                            'url'  => 'admin/roles',
+                            'icon_color' => 'blue',
+                        ],
+                        [
+                            'text'    => 'Ajouter un role',
+                            'url'     => 'admin/roles/create',
+                            'icon_color' => 'yellow',
+                        ],
+                    ],
+                ],
             ],
         ],
 
-        [
-            'text'    => 'Roles',
-            'url'     => "admin/roles",
-            'icon'    => 'users',
-            'can' => 'is_admin',
-            'submenu' => [
-                [
-                    'text' => 'Afficher',
-                    'url'  => 'admin/roles',
-                    'icon_color' => 'blue',
-                ],
-                [
-                    'text'    => 'Ajouter un role',
-                    'url'     => 'admin/roles/create',
-                    'icon_color' => 'yellow',
-                ],
-            ],
-        ],
+
 
 
         [
@@ -208,7 +210,15 @@ return [
             ],
         ],
 
+
+
         [
+            'text'    => 'Localisation',
+            'icon'    => 'hospital-o',
+            'url'     => '#',
+            'can' => 'is_admin',
+            'submenu' => [
+            [
             'text'    => 'Ville',
             'icon'    => 'hospital-o',
             'url'     => 'admin/ville',
@@ -225,26 +235,30 @@ return [
                     'icon_color' => 'yellow',
                 ],
             ],
-        ],
+            ],
 
-        [
-            'text'    => 'Quartier',
-            'icon'    => 'hospital-o',
-            'url'     => 'admin/quartier',
-            'can' => 'is_admin',
-            'submenu' => [
                 [
-                    'text' => 'Afficher',
-                    'url'  => 'admin/quartier',
-                    'icon_color' => 'blue',
-                ],
-                [
-                    'text'    => 'Ajouter un nouveau quartier',
-                    'url'     => 'admin/quartier/create',
-                    'icon_color' => 'yellow',
+                    'text'    => 'Quartier',
+                    'icon'    => 'hospital-o',
+                    'url'     => 'admin/quartier',
+                    'can' => 'is_admin',
+                    'submenu' => [
+                        [
+                            'text' => 'Afficher',
+                            'url'  => 'admin/quartier',
+                            'icon_color' => 'blue',
+                        ],
+                        [
+                            'text'    => 'Ajouter un nouveau quartier',
+                            'url'     => 'admin/quartier/create',
+                            'icon_color' => 'yellow',
+                        ],
+                    ],
                 ],
             ],
         ],
+
+
 
         [
             'text'    => 'Medecin',
@@ -294,21 +308,43 @@ return [
                     'url'     => 'admin/medecin/available',
                     'icon_color' => 'blue',
 
-                'submenu' => [
-                    [
-                        'text' => 'Afficher',
-                        'icon' => 'user',
-                        'url'     => 'admin/medecin/available',
-                        'can' => 'is_admin',
-                    ],
-                    [
-                        'text' => 'Ajouter une disponibilité',
-                        'icon' => 'user',
-                        'url'     => 'admin/medecin/available/create',
-                        'can' => 'is_admin'
+                    'submenu' => [
+                        [
+                            'text' => 'Afficher',
+                            'icon' => 'user',
+                            'url'     => 'admin/medecin/available',
+                            'can' => 'is_admin',
+                        ],
+                        [
+                            'text' => 'Ajouter une disponibilité',
+                            'icon' => 'user',
+                            'url'     => 'admin/medecin/available/create',
+                            'can' => 'is_admin'
 
+                        ],
                     ],
                 ],
+
+                [
+                    'text'    => 'Spécialité',
+                    'url'     => 'admin/speciality',
+                    'icon_color' => 'blue',
+                    'can' => 'is_admin',
+                    'submenu' => [
+                        [
+                            'text' => 'Afficher',
+                            'icon' => 'user',
+                            'url'     => 'admin/speciality',
+                            'can' => 'is_admin',
+                        ],
+                        [
+                            'text' => 'Ajouter une spécialité',
+                            'icon' => 'user',
+                            'url'     => 'admin/speciality/create',
+                            'can' => 'is_admin'
+
+                        ],
+                    ],
                 ],
             ],
         ],
@@ -508,18 +544,13 @@ return [
                 ],
                 [
                     'text'    => 'Urgence Medecin',
-                    'url'     => 'admin/contact/medecin',
+                    'url'     => 'admin/urgences',
                     'icon'   => 'user-md',
                     'submenu' => [
                         [
                             'text' => 'Afficher',
-                            'url'  => 'admin/contact/medecin',
+                            'url'  => 'admin/urgences',
                             'icon_color' => 'blue',
-                        ],
-                        [
-                            'text'    => 'Contacter un Médécin',
-                            'url'     => 'admin/contact/medecin/create',
-                            'icon_color' => 'red',
                         ],
                     ]
                 ],
@@ -533,32 +564,21 @@ return [
             'can' => 'is_gestionnaire',
             'submenu' => [
                 [
-                    'text' => 'Ambulances Commandées',
-                    'url'  => 'admin/itineraire',
+                    'text' => 'Medecins à domicile',
+                    'url'  => 'admin/urgences',
                     'icon_color' => 'blue',
                 ],
                 [
-                    'text'    => 'Commander une Ambulance ',
-                    'url'     => 'admin/itineraire/create',
+                    'text'    => 'Medecins à la clinique ',
+                    'url'     => 'admin/urgences',
                     'icon_color' => 'red',
                 ],
                 [
-                    'text'    => 'Medecins contactés',
-                    'url'     => 'admin/contact/medecin',
-                    'icon'   => 'user-md',
-                    'submenu' => [
-                        [
                             'text' => 'Afficher',
-                            'url'  => 'admin/contact/medecin',
+                            'url'  => 'admin/urgences',
                             'icon_color' => 'blue',
-                        ],
-                        [
-                            'text'    => 'Contacter un Médécin',
-                            'url'     => 'admin/contact/medecin/create',
-                            'icon_color' => 'red',
-                        ],
-                    ]
                 ],
+
             ]
         ],
 

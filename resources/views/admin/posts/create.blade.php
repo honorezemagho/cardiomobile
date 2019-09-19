@@ -1,5 +1,5 @@
- @extends('adminlte::page');
- @include('layouts.tinyeditor');
+ @extends('adminlte::page')
+ @include('layouts.tinyeditor')
 @section('content')
 
 <h1 class="text-center">Créer un Post</h1>

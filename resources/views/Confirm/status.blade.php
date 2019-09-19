@@ -7,10 +7,15 @@
                 <section>
 <div class="container alert-info text-center">
 
-                {{$messages}}
+                {{$messages}}<br><br>
+
+    <a href="<?php echo url('/admin/urgences'); ?>" class="text-theme-colored"> Cliquez ici pour retourner sur Votre Compte </a>
 
 </div>
-    </section>
+
+
+
+                </section>
 </div>
 
 <div class="container col-md-2 centered-block">

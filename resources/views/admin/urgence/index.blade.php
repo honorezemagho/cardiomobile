@@ -2,28 +2,29 @@
 @section('content')
 
     <h2 class="text-center"><span>Urgences Médecins </span></h2>
+    <?php
+    ?>
 
+        @can(['is_gestionnaire'])
+            <table class = "table">
 
-    <table class = "table">
+                <thead>
+                <tr>
+                    <th> Id</th>
+                    <th> Nom</th>
+                    <th> Ville</th>
+                    <th> Quartier</th>
+                    <th>Téléphone</th>
+                    <th>Description</th>
+                    <th>Nom du Médecin</th>
+                    <th>Type</th>
+                    <th>Rendez-Vous</th>
+                    <th> statut</th>
+                </tr>
+                </thead>
 
-        <thead>
-        <tr>
-            <th> Id</th>
-            <th> Nom</th>
-            <th> Ville</th>
-            <th> Quartier</th>
-            <th>Téléphone</th>
-            <th>Description</th>
-            <th>Date de Création</th>
-            <th> statut</th>
-        </tr>
-        </thead>
+                <tbody>
 
-        <tbody>
-
-
-
-        @can(['is_admin', 'is_getionnaire'])
         @if($medecins)
 
             @foreach($medecins as $medecin)
@@ -35,50 +36,118 @@
                     <td>{{$medecin->quartier->name}}</td>
                     <td>{{$medecin->phone}}</td>
                     <td>{{$medecin->description}}</td>
-                    <td>{{$medecin->created_at->diffForhumans()}}</td>
+                    <td>{{$medecin->urgence_type}}</td>
+                    <td>{{$medecin->available->datetime}}</td>
                     <td>
-
+                        @if($medecin->expires == 0)
+                           En attente
+                        @else
+                            Transaction Confirmée
+                        @endif
                     </td>
+
+
                 </tr>
 
             @endforeach
         @endif
-@endcan
+        </tbody>
+    </table>
+        @endcan
 
 
-        <?php
-        use App\Available;
-        use App\Medecin;use App\Transaction;
-        use App\Urgence;
 
-        $medecins_urgence = Available::where('medecin_id', auth()->id())->value("id");
-        $medecins_urgence = Available::where('medecin_id', auth()->id())->value("medecin_id");
-        $medecins_urgent = Urgence::where("available_id",$medecins_urgence)->value('expires');
-        $medecins_urgent_transaction = Urgence::where("available_id",$medecins_urgence)->value('transaction_id');
-        $transaction =  Transaction::where('id', $medecins_urgent_transaction)->value('transaction');
-        $medecin_id = Medecin::where("id",$medecins_urgence)->value('id');
-        $medecin_phone = Medecin::where('id',  $medecin_id)->value('phone');
+        @can(['is_admin'])
 
-        ?>
+            <table class = "table">
+
+                <thead>
+                <tr>
+                    <th> Id</th>
+                    <th> Nom</th>
+                    <th class="hidden-xs"> Ville</th>
+                    <th class="hidden-xs"> Quartier</th>
+                    <th>Téléphone</th>
+                    <th class="hidden-xs">Description</th>
+                    <th>Nom du Médecin</th>
+                    <th>Type</th>
+                    <th>Rendez-Vous</th>
+                    <th> statut</th>
+                </tr>
+                </thead>
+
+                <tbody>
+
+            @if($medecins)
+
+                @foreach($medecins as $medecin)
+
+                    <tr>
+                        <td>{{$medecin->id}}</td>
+                        <td>{{$medecin->name}}</td>
+                        <td class="hidden-xs">{{$medecin->ville->name}}</td>
+                        <td class="hidden-xs">{{$medecin->quartier->name}}</td>
+                        <td>{{$medecin->phone}}</td>
+                        <td class="hidden-xs">{{$medecin->description}}</td>
+                        <td>{{$medecin->medecin->name}}</td>
+                        <td>{{$medecin->urgence_type}}</td>
+                        <td>{{$medecin->available->datetime}}</td>
+                        <td>
+                            @if($medecin->expires == 0)
+                                En attente
+                            @else
+                                Transaction Confirmée
+                            @endif
+                        </td>
+
+                    </tr>
+
+                @endforeach
+            @endif
+        </tbody>
+    </table>
+        @endcan
+
+
+
+
 
 
         @can(['is_medecin'])
+
+            <table class = "table">
+
+                <thead>
+                <tr>
+                    <th class="hidden-xs"> Id</th>
+                    <th> Nom</th>
+                    <th class="hidden-xs"> Ville</th>
+                    <th class="hidden-xs"> Quartier</th>
+                    <th class="hidden-xs">Téléphone</th>
+                    <th>Description</th>
+                    <th>Rendez-Vous</th>
+                    <th> statut</th>
+                </tr>
+                </thead>
+
+                <tbody>
+
             @if($medecins_urgences )
 
                 @foreach($medecins_urgences as $medecin)
 
                     <tr>
-                        <td>{{$medecin->id}}</td>
+                        <td class="hidden-xs"> {{$medecin->id}}</td>
                         <td>{{$medecin->name}}</td>
-                        <td>{{$medecin->ville->name}}</td>
-                        <td>{{$medecin->quartier->name}}</td>
-                        <td>{{$medecin->phone}}</td>
+                        <td class="hidden-xs">{{$medecin->ville->name}}</td>
+                        <td class="hidden-xs">{{$medecin->quartier->name}}</td>
+                        <td class="hidden-xs">{{$medecin->phone}}</td>
                         <td>{{$medecin->description}}</td>
-                        <td>{{$medecin->created_at->diffForhumans()}}</td>
+                        <td>{{$medecin->available->datetime}}</td>
                         <td>
 
-                            @if($medecins_urgent == 0)
-                            <a href="{{url('/'.$transaction.'/'.$medecin_id.'/'.$medecin_phone)}}" class="btn btn-primary">Confirmez</a>
+                            @if($medecin->expires == 0)
+                            <a href="{{url('/urgence/confirm-disponibility/'.$medecin->transaction->transaction.'/'.$medecin_matricule.'/'.$medecin_phone)}}" target="_blank" class="btn btn-primary">Confirmez</a>
                                 @else
                                 Transaction Confirmée
                             @endif
@@ -93,4 +162,16 @@
         </tbody>
     </table>
 
+  {{--  <script>
+    function autoRefreshPage()
+
+    {
+
+    window.location = window.location.href;
+
+    }
+
+    setInterval('autoRefreshPage()', 10000);
+    </script>
+    --}}
 @endsection

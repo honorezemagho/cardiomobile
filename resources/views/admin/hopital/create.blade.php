@@ -1,4 +1,4 @@
-@extends('adminlte::page');
+@extends('adminlte::page')
 @section('content')
 <h1 style="text-align: center">  Ajouter une structure Hospitalière </h1>
 

@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Urgence extends Model
 {
-    protected $fillable = ['name','quartier_id', 'ville_id', 'phone', 'description', 'medecin_matricule', 'medecin_phone', 'shortcode'
-        , 'datetime', 'transaction_id', 'expires', 'available_id', 'urgence_type'];
+    protected $fillable = ['name','quartier_id', 'ville_id', 'phone', 'description', 'medecin_id', 'medecin_matricule', 'medecin_phone',
+        'shortcode', 'datetime', 'transaction_id', 'expires', 'available_id', 'urgence_type', 'speciality_id'];
 
     public function quartier(){
 

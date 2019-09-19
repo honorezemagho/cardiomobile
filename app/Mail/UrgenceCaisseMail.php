@@ -31,6 +31,6 @@ class UrgenceCaisseMail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.contact.cliniquecaisse');
+        return $this->markdown('emails.contact.urgence-medecin');
     }
 }

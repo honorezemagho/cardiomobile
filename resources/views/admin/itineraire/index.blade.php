@@ -14,8 +14,6 @@
             <th> Quartier Arrivée </th>
             <th> Téléphone </th>
             <th> Description</th>
-            <th> Date de Création </th>
-            <th> Dernière Modification </th>
         </tr>
         </thead>
 
@@ -32,8 +30,6 @@
                     <td> {{$itineraire->quartier_stop->name}}</td>
                     <td> {{$itineraire->phone}}</td>
                     <td> {{$itineraire->description ? $itineraire->description : 'Pas de Description'}} </td>
-                    <td> {{$itineraire->created_at->diffForHumans()}}</td>
-                    <td> {{$itineraire->updated_at->diffForHumans()}}</td>
                 </tr>
             @endforeach
         @endif

@@ -1,5 +1,5 @@
- @extends('adminlte::page');
-@section('content');
+ @extends('adminlte::page')
+@section('content')
 
 <h1 class="text-center">Create Posts</h1>
 

@@ -1,4 +1,4 @@
-@extends('adminlte::page');
+@extends('adminlte::page')
 @section('content')
     <h1 style="text-align: center">  Ajouter un Médécin </h1>
 
@@ -17,6 +17,17 @@
     <div class = "form-group">
         {!! Form::label('quartier', 'Quartier :') !!}
         {!! Form::select('quartier_id', [null => 'Veuillez choisir un Quartier'] + $quartiers , null, ['class' => 'form-control']) !!}
+    </div>
+
+
+        <div class = "form-group">
+            {!! Form::label('spécialité', 'Spécialité: ') !!}
+            {!! Form::select('speciality_id', [null => 'Veuillez choisir une Spécialité'] + $speciality , null, ['class' => 'form-control']) !!}
+        </div>
+
+    <div class = "form-group">
+        {!! Form::label('Type', 'Type de Médecin: ') !!}
+        {!! Form::select('type_id', [null => 'Veuillez choisir un type'] + $types , null, ['class' => 'form-control']) !!}
     </div>
 
 

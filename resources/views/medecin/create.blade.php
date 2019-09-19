@@ -22,11 +22,11 @@
         </div>
 
         <div class="col-sm-4">
-        <div class = "form-group">
-            {!! Form::label('quartier', 'Mon Quartier: ') !!}
-            <option value="" selected = "selected">Veuillez choisir un quartier</option>
+            <div class = "form-group">
+                {!! Form::label('quartier', 'Mon Quartier: ') !!}
+                <option value="" selected = "selected">Veuillez choisir un quartier</option>
 
-        </div>
+            </div>
         </div>
 
         <div class="col-sm-4">

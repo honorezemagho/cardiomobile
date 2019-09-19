@@ -18,6 +18,8 @@ class CreateMedecinsTable extends Migration
             $table->string('name')->unique();
             $table->integer('ville_id');
             $table->integer('quartier_id');
+            $table->integer('speciality_id')->nullable();
+            $table->integer('type_id')->nullable();
             $table->integer('phone');
             $table->string('matricule');
             $table->string('email');

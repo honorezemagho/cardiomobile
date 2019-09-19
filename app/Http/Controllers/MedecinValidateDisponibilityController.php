@@ -10,6 +10,7 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use DB;
 
+
 class MedecinValidateDisponibilityController extends Controller
 {
     /**
@@ -108,27 +109,22 @@ class MedecinValidateDisponibilityController extends Controller
 
         $ids = Transaction::where('transaction', $request['transaction'])->value('id');
         $expires = Urgence::where('transaction_id', $ids)->value('expires');
+
         $id = Urgence::where('transaction_id', $ids)->value('id');
         $locale = 'fr_FR';
+
         $patient_name = Urgence::where('transaction_id', $ids)->value('name');
         $patient_datetime_first = Urgence::where('transaction_id', $ids)->value('available_id');
+
         $patient_datetime_second = Available::where('id', $patient_datetime_first)->value('datetime');
         $patient_datetime = Carbon::parse($patient_datetime_second)->toDateTimeString();
+
        $patient_date = Carbon::parseFromLocale($patient_datetime,$locale)->IsoFormat(' Do MMMM YYYY');
         $patient_heure = Carbon::parseFromLocale($patient_datetime,$locale)->toTimeString();
+
         $patient_phone = Urgence::where('transaction_id', $ids)->value('phone');
         $send_message = 'Bonjour M.'.$patient_name .', votre rendez-vous a été confirmé à la clinique Coeur et Vie le '
-            . $patient_date .' à '. $patient_heure ;
-
-       /* $send = "http://5.39.75.139:22140/message?user=digis&pass=digis123&from=8002&to=+237$patient_phone
-        &text=".$send_message."&dlrreq=1";
-
-              $client = new \GuzzleHttp\Client();
-
-        // Create a request
-           $request = $client->get($send);
-        // Get the actual response without headers
-         $response = $request->getBody();*/
+            . $patient_date .' à '. $patient_heure .' '.' Pour toute  assistance, veuillez contacter le  676667626';
 
 
         if (Transaction::Where('transaction', $request['transaction'])->exists() &
@@ -141,6 +137,15 @@ class MedecinValidateDisponibilityController extends Controller
                 ->update(['medecin_matricule' => $request['matricule'], 'medecin_phone' => $request['medecin_phone'],
                     'expires' => 1]);
 
+            $send = "http://5.39.75.139:22140/message?user=digis&pass=digis123&from=8002&to=+237$patient_phone
+        &text=".$send_message."&dlrreq=1";
+
+            $client = new \GuzzleHttp\Client();
+
+              /// Create a request
+            $request = $client->get($send);
+            // Get the actual response without headers
+            $response = $request->getBody();
 
 
             $header = " Confirmation de disponibilité";
@@ -164,7 +169,6 @@ class MedecinValidateDisponibilityController extends Controller
             $messages = "Paramètres Incorrects, Veuilllez réessayer";
             return view('Confirm.status', compact('messages', 'header'));
         }
-
 
     }
 

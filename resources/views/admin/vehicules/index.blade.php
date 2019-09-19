@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('content');
+@section('content')
 
 <h1 class="text-center"> Vehicules Personnels </h1>
 
@@ -14,8 +14,6 @@
         <th> Ville</th>
         <th> Quartier</th>
         <th>Téléphone</th>
-        <th>Date de Création</th>
-        <th> Dernière Modification</th>
     </tr>
     </thead>
 
@@ -31,8 +29,6 @@
                 <td>{{$vehicule->ville->name}}</td>
                 <td>{{$vehicule->quartier->name}}</td>
                 <td>{{$vehicule->phone}}</td>
-                <td>{{$vehicule->created_at->diffForhumans()}}</td>
-                <td>{{$vehicule->updated_at->diffForhumans()}}</td>
             </tr>
 
         @endforeach

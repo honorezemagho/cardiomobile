@@ -150,7 +150,7 @@
         timeSeconds: 0,                 // [0.4.13][UPD]    Integer, Boolean, null
         timeIncrement: true,            // [0.4.5]          Boolean
         timeStepHours: 1,               // [0.4.3]          Integer
-        timeStepMinutes: 30,             // [0.4.3]          Integer
+        timeStepMinutes: 5,             // [0.4.3]          Integer
         timeStepSeconds: 30,             // [0.4.3]          Integer
         today: true,                    // [0.4.0]          Boolean
         tooltips: [],                   // [0.4.0]          Array

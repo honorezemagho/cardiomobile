@@ -4,7 +4,14 @@
 
 
 <section id="home" >
-    <div class="display-table">
+
+    <div class="bg-theme-colored">
+
+        <h3 class="text-white text-center"> Aucun rendez - vous n'est disponible pour le moment</h3>
+
+    </div>
+
+    {{--<div class="display-table">
         <div class="display-table-cell">
             <div class="container  pt-50 pb-5">
                 <h3 class="mt-0  pt-20 mb-10 text-theme-colored text-center">MEDECIN D'URGENCE</h3>
@@ -15,6 +22,7 @@
                 $locale = 'fr_FR';
                 $records = $data['available2'];
                 $request['payment_amount'] =  Payment::where('id', 1)->value('price');
+                $amount = $request['payment_amount']
                 ?>
 
                 {!! Form::open(['method' =>'POST', 'action' => 'UrgenceFormReceivingController@store', 'class' => 'bg-theme-colored p-30 text-white']) !!}
@@ -63,7 +71,7 @@
 
 
                         <div class="custom-control custom-radio mb-1 text-white centered center-block ">
-                            {{--{!! Form::label('payment_method', 'Moyens de Paiements:') !!}--}}
+                            --}}{{--{!! Form::label('payment_method', 'Moyens de Paiements:') !!}--}}{{--
                             <div class="col-md-5"> </div>
                             <div class="custom-control custom-radio mb-1 centered center-block">
                                 <input class="custom-control-input" type="radio" name="payment_method"  value="momo">
@@ -95,7 +103,7 @@
                             <input type="hidden" value="{{$data['description']}}" name="description">
                             <input type="hidden" value="{{$data['urgence_type']}}" name="urgence_type">
                             <input type="hidden" value="{{$data['transaction_id']}}" name="transaction_id">
-                            <input type="hidden" value="{{$data['payment_amount']}}" name="transaction_id">
+                            <input type="hidden" value= <?php echo $amount;?> name="payment_amount" >
 
 
                             <div class = "form-group col-md-11"></div>
@@ -123,6 +131,8 @@
             </div>
         </div>
     </div>
+--}}
+
 
 </section>
 

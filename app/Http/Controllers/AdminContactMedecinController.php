@@ -12,6 +12,8 @@ use App\Quartier;
 use App\Medecin;
 use App\Http\Requests\ContactMedecinRequest;
 use App\Urgence;
+use App\Transaction;
+use Illuminate\Support\Facades\Auth;
 
 class AdminContactMedecinController extends Controller
 {
@@ -24,11 +26,32 @@ class AdminContactMedecinController extends Controller
     {
         //
         $medecins = Urgence::all();
-        $medecins_urgence = Available::where('medecin_id', auth()->id())->value("id");
-        $medecins_urgences = Urgence::where("available_id",$medecins_urgence)->get();
-        $medecins_urgent = Urgence::where("available_id",$medecins_urgence)->value('expires');
+        $medecins_available = Available::where('medecin_id', Auth::user()->medecin_id)->value('id');
 
-        return view('admin.urgence.index', compact('medecins', 'medecins_urgences', 'medecins_urgent'));
+        $medecins_urgences = Urgence::where('medecin_id', Auth::user()->medecin_id)->get();
+
+        $medecins_urgent = Urgence::where('available_id', $medecins_available)->value('expires');
+
+       /* $medecins_urgent_transaction = Urgence::where("available_id",$medecins_available)->value('transaction_id');
+        $transaction =  Transaction::where('id', $medecins_urgent_transaction)->value('transaction');*/
+
+        $medecin_phone = Medecin::where('id',   Auth::user()->medecin_id)->value('phone');
+        $medecin_matricule = Medecin::where('id',   Auth::user()->medecin_id)->value('matricule');
+
+      /*  $request['1'] =  Urgence::where('medecin_id', Auth::user()->medecin_id)->get('available_id');;*/
+
+       /* $medecins_urgent_transaction = Urgence::where("available_id",$medecins_available)->value('transaction_id');
+        $transaction =  Transaction::where('id', $medecins_urgent_transaction)->value('transaction');
+        $medecin_phone = Medecin::where('id',  $medecins_available)->value('phone');
+        $medecin_matricule = Medecin::where('id',  $medecins_available)->value('matricule');*/
+
+
+      /*  $data = $request['1'] ;
+        return $data;*/
+
+
+        return view('admin.urgence.index', compact('medecins', 'medecins_urgences', 'medecins_urgent'
+        , 'transaction', 'medecin_phone', 'medecin_matricule'));
     }
 
 

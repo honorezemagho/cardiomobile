@@ -22,6 +22,8 @@ class CreateUrgencesTable extends Migration
             $table->integer('available_id')->nullable();
             $table->text('description');
             $table->string('urgence_type')->nullable();
+            $table->string('medecin_id')->nullable();
+            $table->string('speciality_id')->nullable();
             $table->string('medecin_matricule')->nullable();
             $table->integer('medecin_phone')->nullable();
             $table->integer('transaction_id');

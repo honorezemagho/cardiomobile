@@ -11,44 +11,48 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('home.content');
-//});
 
-use Illuminate\Support\Facades\Auth;
 
     Route::get('/', 'IndexController@index');
 
-    Route::get('/manual', function(){
-        return view('home.manual');
-    });
+    Route::get('/manual', 'IndexController@manual');
 
     Route::get('states/get/{id}', 'IndexController@getStates');
-
-    Auth::routes();
 
     Route::get('/home', 'HomeController@index')->name('home');
 
     Route::resource('/itineraire', 'ItineraireController');
 
-    Route::get('/contact', function (){
-        return view('contact.create');
+    Route::get('/contact', 'IndexController@contact');
+
+
+    Route::prefix('urgence')->group(function () {
+
+        Route::get('/confirm-disponibility/{operation}/{matricule}/{medecin_phone}', 'MedecinValidateDisponibilityController@update');
+
+        Route::resource('/contact/medecin', 'UrgenceFormReceivingMedecinController');
+
+        Route::resource('/receiving/clinique', 'UrgenceFormReceivingCliniqueController');
+
+        Route::post('/receiving/clinique/save', 'UrgenceFormReceivingCliniqueController@save');
+
+        Route::get('/receiving/clinique/save/paginate', 'UrgenceFormReceivingCliniqueController@cardiologue');
+
+        Route::post('/receiving/domicile', 'UrgenceFormReceivingController@store');
+
+        Route::get('/disponibility', 'IndexController@disponibility');
+
+        Route::get('/speciality', 'IndexController@speciality');
+
+        Route::get('/cardiologue', 'UrgenceFormReceivingCliniqueController@cardiologue');
+
     });
 
-    Route::resource('/urgence/confirm_disponibility', 'MedecinConfirmDisponibilityController');
 
-    Route::get('/urgence/confirm-disponibility/{operation}/{matricule}/{medecin_phone}', 'MedecinValidateDisponibilityController@update');
+        Route::get('/paginate', 'IndexController@paginate');
 
-    Route::resource('/contact/medecin', 'ClientContactMedecinController');
-
-    Route::post('/urgence/receiving/clinique', 'Urgenceformreceivingclinique@store');
-
-    Route::post('/urgence/receiving/domicile', 'UrgenceFormReceivingController@store');
-
-
-    Route::post('/contact/clinique', 'ClientContactCliniqueController@store');
-
-    Route::post('/test/contact/clinique', 'TestClientContactCliniqueController@store');
+   /* Route::resource('/client/contact/clinique', 'ClientContactMedecinCliniqueController');
+    Route::resource('/client/contact/clinique/form/receiving', 'ReceivingCliniquedataController');
 
     Route::get('/payments/status', function (){
     return view('payments.now');
@@ -56,7 +60,9 @@ use Illuminate\Support\Facades\Auth;
 
     Route::post('/payments/now', 'PaymentController@now');
 
-    Route::post('/payments/finish', 'PaymentController@finish');
+Route::post('/payments/pay', 'PaymentController@pay');
+
+    Route::post('/payments/finish', 'PaymentController@finish');*/
 
 
 
@@ -64,10 +70,8 @@ use Illuminate\Support\Facades\Auth;
 
 Route::resource('admin/posts', 'AdminPostsController');*/
 
-    Route::get('/admin', function(){
-    return view('admin.index');
-    })->middleware('auth');;
 
+    Route::get('/admin', 'IndexController@admin')->middleware('auth');
 
     Route::group(['middleware' => ['medecin', 'auth']], function (){
 
@@ -94,6 +98,8 @@ Route::resource('admin/posts', 'AdminPostsController');*/
 
         Route::resource('admin/ambulance', 'AdminAmbulanceController');
 
+        Route::resource('admin/speciality', 'SpecialityController');
+
         Route::resource('admin/vehicule', 'AdminVehiculesController');
 
         Route::resource('admin/medecin', 'AdminMedecinController');
@@ -105,7 +111,5 @@ Route::resource('admin/posts', 'AdminPostsController');*/
         Route::resource('admin/becomeuser/medecin', 'GiveMedecinAccessToAdminController');
     });
 
-        Auth::routes(['register' => false, 'reset' => false]);
-
-
+        Auth::routes(['register' => false]);
 

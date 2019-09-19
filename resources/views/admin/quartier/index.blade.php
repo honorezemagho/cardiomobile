@@ -1,4 +1,4 @@
-@extends('adminlte::page');
+@extends('adminlte::page')
 
 @section('content')
 
@@ -17,8 +17,6 @@
             <th> Id</th>
             <th> Nom </th>
             <th>Ville</th>
-            <th> Date de Creation </th>
-            <th> Dernière Modification </th>
         </tr>
         </thead>
 
@@ -30,8 +28,6 @@
                     <td> {{$quartier->id}} </td>
                     <td> {{$quartier->name}}</td>
                     <td> {{$quartier->ville->name}} </td>
-                    <td> {{$quartier->created_at->diffForHumans()}}</td>
-                    <td> {{$quartier->updated_at->diffForHumans()}}</td>
                 </tr>
             @endforeach
         @endif

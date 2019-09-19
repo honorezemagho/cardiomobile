@@ -1,6 +1,6 @@
-@extends('adminlte::page');
+@extends('adminlte::page')
 
-@section('content');
+@section('content')
 
 @if(Session::has('deleted_user'))
 

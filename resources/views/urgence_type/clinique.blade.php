@@ -12,7 +12,6 @@
                 <?php
                 use Carbon\Carbon;
                 $locale = 'fr_FR';
-                $records = $data['available1'];
                 ?>
 
 
@@ -96,7 +95,6 @@
                                                  <input type="hidden" value="{{$data['urgence_type']}}" name="urgence_type">
                                                  <input type="hidden" value="{{$data['transaction_id']}}" name="transaction_id">
                                                  <input type="hidden" value="{{$data['payment_amount']}}" name="payment_amount">
-
 
                                                  <div class = "form-group col-md-11"></div>
                                                   <div class = "form-group col-md-1">

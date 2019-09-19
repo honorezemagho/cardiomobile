@@ -14,8 +14,6 @@
         <th> Ville</th>
         <th> Quartier</th>
         <th>Téléphone</th>
-        <th>Date de Création</th>
-        <th> Dernière Modification</th>
     </tr>
     </thead>
 
@@ -31,8 +29,6 @@
                <td>{{$hopital->ville->name}}</td>
                 <td>{{$hopital->quartier->name}}</td>
                 <td>{{$hopital->phone}}</td>
-                <td>{{$hopital->created_at->diffForhumans()}}</td>
-                <td>{{$hopital->updated_at->diffForhumans()}}</td>
             </tr>
 
         @endforeach

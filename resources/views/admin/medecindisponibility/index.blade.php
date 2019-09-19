@@ -31,7 +31,7 @@
 use Carbon\Carbon;
 $locale = 'fr_FR';
 use App\Available;
-$availables = Available::where('medecin_id', Auth::user()->id)->get();
+$availables = Available::where('medecin_id', Auth::user()->medecin_id)->get();
 $availables2 = Available::all();
 ?>
 
@@ -43,7 +43,7 @@ $availables2 = Available::all();
                   <td>{{$available->id}}</td>
                    <td>{{ \Carbon\Carbon::parseFromLocale($available->datetime, $locale)->IsoFormat(' Do MMMM YYYY')}}</td>
                    <td>{{ \Carbon\Carbon::parseFromLocale($available->datetime, $locale)->toTimeString()}}</td>
-                   <td>{{$available->medecin->name}}</td>
+                   <td>DR. {{$available->medecin->name}}</td>
                </tr>
 
            @endforeach
@@ -67,7 +67,8 @@ $availables2 = Available::all();
         @endforeach
 
     @endif
-@endcan
+
+   @endcan
 
 @can('is_medecin')
 
