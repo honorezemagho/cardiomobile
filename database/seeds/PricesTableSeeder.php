@@ -4,7 +4,7 @@ use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class PaymentTableSeeder extends Seeder
+class PricesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,7 +14,7 @@ class PaymentTableSeeder extends Seeder
     public function run()
     {
         //
-        DB::table('payments')->insert([[
+        DB::table('prices')->insert([[
 
             'name' => 'domicile',
             'price' => 10000,

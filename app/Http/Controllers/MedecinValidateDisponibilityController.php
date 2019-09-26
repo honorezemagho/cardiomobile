@@ -124,7 +124,7 @@ class MedecinValidateDisponibilityController extends Controller
 
         $patient_phone = Urgence::where('transaction_id', $ids)->value('phone');
         $send_message = 'Bonjour M.'.$patient_name .', votre rendez-vous a été confirmé à la clinique Coeur et Vie le '
-            . $patient_date .' à '. $patient_heure .' '.' Pour toute  assistance, veuillez contacter le  676667626';
+            . $patient_date .' à '. $patient_heure;
 
 
         if (Transaction::Where('transaction', $request['transaction'])->exists() &

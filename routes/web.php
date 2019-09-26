@@ -76,6 +76,7 @@ Route::resource('admin/posts', 'AdminPostsController');*/
     Route::group(['middleware' => ['medecin', 'auth']], function (){
 
     Route::resource('admin/urgences', 'AdminContactMedecinController');
+
     Route::resource('admin/medecin/available', 'MedecinDisponibilityController');
 
     });
@@ -89,6 +90,7 @@ Route::resource('admin/posts', 'AdminPostsController');*/
         Route::get('/home', 'HomeController@index');
         Route::resource('/admin/roles', 'AdminRolesController');
         Route::resource('/admin/payments', 'PaymentController');
+        Route::resource('/admin/prices', 'PriceController');
     });
 
 
@@ -101,6 +103,8 @@ Route::resource('admin/posts', 'AdminPostsController');*/
         Route::resource('admin/speciality', 'SpecialityController');
 
         Route::resource('admin/vehicule', 'AdminVehiculesController');
+
+        Route::get('quartier/get/{id}', 'AdminMedecinController@getStates');
 
         Route::resource('admin/medecin', 'AdminMedecinController');
 

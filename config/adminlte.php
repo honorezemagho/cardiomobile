@@ -192,19 +192,19 @@ return [
 
 
         [
-            'text'    => 'Paiements',
-            'url'     => "admin/payments",
+            'text'    => 'Prix',
+            'url'     => "admin/prices",
             'icon'    => 'money',
             'can' => 'is_admin',
             'submenu' => [
                 [
                     'text' => 'Afficher',
-                    'url'  => 'admin/payments',
+                    'url'  => 'admin/prices',
                     'icon_color' => 'blue',
                 ],
                 [
                     'text'    => 'Ajouter un prix',
-                    'url'     => 'admin/payments/create',
+                    'url'     => 'admin/prices/create',
                     'icon_color' => 'yellow',
                 ],
             ],

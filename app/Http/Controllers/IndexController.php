@@ -24,6 +24,7 @@ class IndexController extends Controller
         return view('home.content', compact('villes', 'quartiers', 'countries'));
     }
 
+
     public function getStates($id) {
         $states = DB::table("quartiers")->where("ville_id",$id)->pluck("name","id");
 

@@ -12,7 +12,7 @@ use App\Ville;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-use DB;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 
 class AdminMedecinController extends Controller
@@ -26,7 +26,10 @@ class AdminMedecinController extends Controller
     {
         //
         $medecins = Medecin::all();
-        return view('admin.medecin.index', compact('medecins'));
+        $villes = Ville::pluck('name', 'id')->all();
+        $quartiers = Quartier::pluck('name', 'id')->all();
+        $countries = DB::table('villes')->pluck("name","id");
+        return view('admin.medecin.index', compact('medecins', 'villes', 'quartiers', 'countries'));
     }
 
     /**
@@ -38,21 +41,24 @@ class AdminMedecinController extends Controller
     {
         //
         $villes = Ville::pluck('name', 'id')->all();
-        $quartiers = Quartier::pluck('name', 'id')->all();
+      /*  $quartiers = Quartier::pluck('name', 'id')->all();*/
         $matricule = DB::table('medecins')->latest('id')->value('id');
         $b = 1;
         $mat = $matricule + $b;
         $matricules = 'Med'.$mat;
         $speciality = Speciality::pluck('speciality', 'id')->all();
         $types = MedecinsType::pluck('name', 'id')->all();
-        return view('admin.medecin.create', compact('villes', 'quartiers', 'matricules', 'speciality'
-        , 'types'));
+
+        return view('admin.medecin.create', compact('villes', 'quartiers', 'matricules',
+            'speciality', 'types'));
     }
+
 
     public function getStates($id) {
         $states = DB::table("quartiers")->where("ville_id",$id)->pluck("name","id");
 
         return json_encode($states);
+
     }
     /**
      * Store a newly created resource in storage.

@@ -2,16 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Hopital;
-use App\Quartier;
+use App\Payment;
 use Illuminate\Http\Request;
-use App\Http\Requests\HopitalCreateRequest;
-use App\Ville;
-use App\Structure;
+use Illuminate\Support\Facades\Session;
 
-use App\Http\Requests;
-
-class AdminHopitalController extends Controller
+class PriceController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,10 +16,8 @@ class AdminHopitalController extends Controller
     public function index()
     {
         //
-        $hopitals = Hopital::all();
-
-        return view('admin.hopital.index', compact('hopitals'));
-
+        $payments = Payment::all();
+        return view('price.index', compact('payments'));
     }
 
     /**
@@ -35,9 +28,7 @@ class AdminHopitalController extends Controller
     public function create()
     {
         //
-        $villes = Ville::pluck('name', 'id')->all();
-        $structures = Structure::pluck('name', 'id')->all();
-        return view('admin.hopital.create', compact('quartiers', 'villes', 'structures'));
+        return view('price.create');
     }
 
     /**
@@ -46,14 +37,13 @@ class AdminHopitalController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(HopitalCreateRequest $request)
+    public function store(Request $request)
     {
         //
         $input = $request->all();
 
-        Hopital::create($input);
-
-        return redirect('admin/hopital');
+        Payment::create($input);
+        return redirect('admin/prices');
     }
 
     /**
@@ -65,7 +55,6 @@ class AdminHopitalController extends Controller
     public function show($id)
     {
         //
-       /* return view('admin.hopital.show');*/
     }
 
     /**
@@ -77,7 +66,9 @@ class AdminHopitalController extends Controller
     public function edit($id)
     {
         //
-        return view('admin.hopital.edit');
+        $payment = Payment::findOrFail($id);
+
+        return view('price.edit', compact('payment'));
     }
 
     /**
@@ -90,6 +81,14 @@ class AdminHopitalController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $payment = Payment::findOrFail($id);
+
+        $input = $request->all();
+
+        $payment->update($input);
+
+        return redirect('admin/prices');
+
     }
 
     /**
@@ -100,6 +99,14 @@ class AdminHopitalController extends Controller
      */
     public function destroy($id)
     {
-        //
+
+        $payment = Payment::findOrFail($id);
+
+        $payment->delete();
+
+        Session::flash('deleted_payment', 'Le Paiement a été supprimé avec succès');
+
+        return redirect('/admin/prices');
     }
+
 }

@@ -41,7 +41,8 @@
 
                                 <div class="form-group mb-10 text-theme-colored">
                                     {!! Form::label('ville_id', 'Ville:') !!}
-                                    {!! Form::select('ville_id', [null => 'Veuillez choisir votre Ville de résidence'] + $villes , null, ['class' => 'form-control']) !!}
+                                    {!! Form::select('ville_id', [null => 'Veuillez choisir votre Ville de résidence']
+                                    + $villes , null, ['class' => 'form-control']) !!}
                                 </div>
 
                                 <div class="form-group mb-10 text-theme-colored">
