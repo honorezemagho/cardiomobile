@@ -23,6 +23,7 @@ class MedecinsTableSeeder extends Seeder
             'matricule' => 'Med1',
             'speciality_id' => 1,
             'type_id' => 1,
+            'code_id' => 1,
             'email' => 'honorezemagho@yahoo.fr',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
@@ -36,6 +37,7 @@ class MedecinsTableSeeder extends Seeder
             'matricule' => 'Med2',
             'speciality_id' => 2,
             'type_id' => 1,
+            'code_id' => 2,
             'email' => 'honorezemagho@gmail.com',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
@@ -49,6 +51,7 @@ class MedecinsTableSeeder extends Seeder
             'matricule' => 'Med3',
             'speciality_id' => 1,
             'type_id' => 1,
+            'code_id' => 3,
             'email' => 'zankafred@gmail.com',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
@@ -62,6 +65,7 @@ class MedecinsTableSeeder extends Seeder
             'matricule' => 'Med4',
             'speciality_id' => 4,
             'type_id' => 2,
+            'code_id' => 4,
             'email' => 'zemagho48@gmail.com',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
@@ -76,6 +80,7 @@ class MedecinsTableSeeder extends Seeder
                 'matricule' => 'Med4',
                 'speciality_id' => 5,
                 'type_id' => 2,
+                'code_id' => 5,
                 'email' => 'honoreblogueur@gmail.com',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')

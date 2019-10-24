@@ -17,7 +17,7 @@ class HopitalsTableSeeder extends Seeder
             'name' => 'HÔPITAL LAQUINTINIE DE DOUALA',
             'structure_id' => 1,
             'ville_id' => 2,
-            'quartier_id' => 2,
+            'quartier_id' => 3,
             'phone' => 675902345,
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
@@ -31,6 +31,17 @@ class HopitalsTableSeeder extends Seeder
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ],
+
+
+            [
+                'name' => 'CLINIQUE COEUR ET VIE ',
+                'structure_id' => 3,
+                'ville_id' => 2,
+                'quartier_id' => 4,
+                'phone' => 654452289,
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],
         ]); 
     }
 }

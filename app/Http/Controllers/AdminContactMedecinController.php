@@ -56,6 +56,7 @@ class AdminContactMedecinController extends Controller
 
 
     public function getStates($id) {
+
         $states = DB::table("quartiers")->where("ville_id",$id)->pluck("name","id");
 
         return json_encode($states);

@@ -1,7 +1,7 @@
 @extends('adminlte::page')
 @section('content')
 
-    <h2 class="text-center"><span>Urgences Médecins </span></h2>
+    <h2 class="text-center"><span>Rendez-vous Médecins </span></h2>
     <?php
     ?>
 

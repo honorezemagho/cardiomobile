@@ -20,8 +20,10 @@ class CreateAvailablesTable extends Migration
             $table->integer('quartier_id');
             $table->integer('type_id');
             $table->integer('speciality_id');
+            $table->integer('price');
             $table->integer('expires')->default(0);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

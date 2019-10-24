@@ -20,7 +20,7 @@
             <th class="hidden-xs"> Email </th>
             <th>Téléphone</th>
             <th>Role </th>
-            <th class="hidden-xs"> Status</th>
+            <th class="hidden-xs"> Statut</th>
         </tr>
         </thead>
 
@@ -36,7 +36,7 @@
                     <td class="hidden-xs"> {{$user->email}}</td>
                     <td> {{$user->phone}}</td>
                     <td> {{$user->role ? $user->role->name : 'User has no role'}} </td>
-                    <td class="hidden-xs"> {{$user->is_active == 1 ? 'Active' : 'Not Active'}}</td>
+                    <td class="hidden-xs"> {{$user->is_active == 1 ? 'Actif' : 'Inactif'}}</td>
                     <td class="hidden-xs">
                         <a class="btn btn-primary" href="{{ URL::action('AdminUsersController@edit',  $user->id) }}">Modifier</a>
                         {!! Form::open(['method' => 'DELETE','action' => ['AdminUsersController@destroy', $user->id],'style'=>'display:inline']) !!}

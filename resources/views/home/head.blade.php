@@ -19,46 +19,8 @@ CARDIOmobile, cardioMOBILE, AMBULANCE DOUALA, DOUALA AMBULANCE, YAOUNDE AMBULANC
     <link href="{{ asset('dentalpro/images/favicon.png') }}" rel="apple-touch-icon" sizes="114x114">
     <link href="{{ asset('dentalpro/images/favicon.png') }}" rel="apple-touch-icon" sizes="144x144">
 
-    <!-- Stylesheet -->
-    <link href="{{ asset('dentalpro/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('dentalpro/css/jquery-ui.min.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('dentalpro/css/animate.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('dentalpro/css/css-plugin-collections.css') }}" rel="stylesheet"/>
-    <!-- CSS | menuzord megamenu skins -->
-    <link href="{{ asset('dentalpro/css/menuzord-skins/menuzord-gradient.css') }}" rel="stylesheet"/>
-    <link id="menuzord-menu-skins" href="{{ asset('dentalpro/css/menuzord-skins/menuzord-border-boxed.css') }}" rel="stylesheet"/>
     <!-- CSS | Main style file -->
     <link href="{{ asset('dentalpro/css/style-main.css') }}" rel="stylesheet" type="text/css">
-    <!-- CSS | Custom Margin Padding Collection -->
-    <link href="{{ asset('dentalpro/css/custom-bootstrap-margin-padding.css') }}" rel="stylesheet" type="text/css">
-    <!-- CSS | Responsive media queries -->
-    <link href="{{ asset('dentalpro/css/responsive.css') }}" rel="stylesheet" type="text/css">
-    <!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
-    <!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
-
-    <!-- Revolution Slider 5.x CSS settings -->
-{{--    <link  href="{{ asset('dentalpro/js/revolution-slider/css/settings.css') }}" rel="stylesheet" type="text/css"/>
-    <link  href="{{ asset('dentalpro/js/revolution-slider/css/layers.css') }}" rel="stylesheet" type="text/css"/>
-    <link  href="{{ asset('dentalpro/js/revolution-slider/css/navigation.css') }}" rel="stylesheet" type="text/css"/>--}}
-
-    <!-- CSS | Theme Color -->
-    <link href="{{ asset('dentalpro/css/colors/theme-skin-color-set1.css') }}" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="{{ asset('datepicker/css/tail.datetime-default-blue.css') }}">
-
-    <!-- external javascripts -->
-    <script src="{{ asset('dentalpro/js/jquery-2.2.4.min.js') }}"></script>
-    <script src="{{ asset('dentalpro/js/jquery-ui.min.js') }}"></script>
-    <script src="{{ asset('dentalpro/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.bootstrap.wizard.js') }}"></script>
-    <script src="{{ asset('js/jquery-steps.min.js') }}"></script>
-    <!-- JS | jquery plugin collection for this theme -->
-    <script src="{{ asset('dentalpro/js/jquery-plugin-collection.js') }}"></script>
-
-    <link rel="stylesheet" href="{{ asset('wizard/css/step-form-wizard-all.css') }}" type="text/css" media="screen, projection">
-
-    <!-- nicer scroll in steps -->
-    <link rel="stylesheet" href="{{ asset('wizard/css/jquery.mCustomScrollbar.min.css') }}">
-    <script src="{{ asset('wizard/js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
 
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="a7347e31-4ab3-4540-979f-a91e2fb9cfdd";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
@@ -76,5 +38,9 @@ CARDIOmobile, cardioMOBILE, AMBULANCE DOUALA, DOUALA AMBULANCE, YAOUNDE AMBULANC
         }
     </style>
     <![endif]-->
+
+    <link rel="stylesheet" href="{{ asset('css/all.css') }}">
+    <script src="{{ asset('js/all.js')}}"></script>
+
 
 </head>

@@ -17,7 +17,9 @@ class CreateQuartiersTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->integer('ville_id');
+            $table->integer('arrondissement_id');
             $table->timestamps();
+			$table->softDeletes();
         });
     }
 

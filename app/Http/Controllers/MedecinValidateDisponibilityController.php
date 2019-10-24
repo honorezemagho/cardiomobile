@@ -31,6 +31,7 @@ class MedecinValidateDisponibilityController extends Controller
     public function create()
     {
         //
+       
     }
 
     /**

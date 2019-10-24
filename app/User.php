@@ -2,22 +2,18 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use App\Role;
-use App\Ville;
-use App\Quartier;
-use App\Photo;
-use App\Post;
-use App\Medecin;
-use App\Available;
-use App\matricule;
-use App\Hopital;
+use Laravel\Passport\HasApiTokens;
+
 
 class User extends Authenticatable
 {
     use Notifiable;
+    use SoftDeletes, HasApiTokens;
+    protected $dates = ['deleted_at'];
 
     /**
      * The attributes that are mass assignable.
@@ -25,7 +21,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password','phone','is_active','role_id','email_verified_at', 'api_token', 'photo_id', 'medecin_id'
+        'name', 'email', 'password','phone','is_active','role_id','email_verified_at', 'api_token', 'photo_id', 'medecin_id', 'arrondissement_id'
     ];
 
     /**
@@ -100,5 +96,9 @@ class User extends Authenticatable
     public  function medecin(){
 
        return $this->belongsTo('App\Medecin');
+    }
+
+    public  function arrondissement(){
+        return $this->belongsTo('App\Arrondissement');
     }
 }

@@ -2,25 +2,158 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58991b56-c96d-4d51-ac4e-e3eb02d366bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Widgets/UrgenceMedecinWidget.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/price/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/price/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/price/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2019-10-21T122059.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2019-10-21T123100.401.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2019-10-21T123818.401.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2019-10-21T123842.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2019-10-21T123853.500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Arrondissement.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Code.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminArrondissementController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PayPalController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersProfileController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ValidationCodeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Mail/MedecinUploadPhoto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Meeting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/paypal.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_09_27_091134_create_arrondissements_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_09_30_131802_create_codes_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_10_21_194020_create_meetings_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/ArrondissementTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/CodeTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/156510248213716431 (Copier).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/156510266813716431 (Copier).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/156510281713716431 (Copier).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1569920158person_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1571216099IMG-20190604-WA0002[1].jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1571219003IMG-20190604-WA0002[1].jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1571219906IMG-20190604-WA0002[1].jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1571220145IMG-20190604-WA0002[1].jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1571222444IMG-20190604-WA0002[1].jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1571222476IMG-20190604-WA0002[1].jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1571224333IMG-20190604-WA0002[1].jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1571224416IMG-20190604-WA0002[1].jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1571224588IMG-20190604-WA0002[1].jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1571226430IMG-20190604-WA0002[1].jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1571333546person_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/dashboard2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/arrondissement/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/arrondissement/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/arrondissement/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/medecindisponibility/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/profile/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/profile/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/datepicker/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/medecin/uploadphoto.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/medecin/upload.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/paginate/date.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/oauth-private.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/oauth-public.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/cardio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cardio.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminHopitalController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminHopitalController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Ambulance.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Ambulance.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Available.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Available.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Hopital.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Hopital.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminContactMedecinController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminContactMedecinController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminMedecinController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminMedecinController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminQuartierController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminQuartierController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientContactMedecinController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientContactMedecinController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MedecinDisponibilityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MedecinDisponibilityController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MedecinValidateDisponibilityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MedecinValidateDisponibilityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UrgenceFormReceivingCliniqueController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UrgenceFormReceivingCliniqueController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Itineraire.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Itineraire.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Medecin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Medecin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/MedecinsType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MedecinsType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Payment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Payment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Person.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Person.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Price.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Price.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Quartier.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Quartier.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Speciality.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Speciality.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Structure.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Structure.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Transaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Transaction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Urgence.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Urgence.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Vehicule.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Vehicule.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Ville.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Ville.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/matricule.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/matricule.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/adminlte.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/adminlte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery.timepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.timepicker.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/ambulance/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/ambulance/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/hopital/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/hopital/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_15_115456_create_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_15_115456_create_roles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_15_124502_create_ambulances_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_15_124502_create_ambulances_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_15_124536_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_15_124536_create_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_15_124649_create_hopitals_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_15_124649_create_hopitals_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_15_124658_create_itineraires_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_15_124658_create_itineraires_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_15_124913_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_15_124913_create_posts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_15_124922_create_quartiers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_15_124922_create_quartiers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_15_124931_create_structures_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_15_124931_create_structures_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_15_124940_create_vehicules_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_15_124940_create_vehicules_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_15_124951_create_villes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_15_124951_create_villes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_19_175107_create_medecins_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_19_175107_create_medecins_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_21_094106_create_urgences_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_21_094106_create_urgences_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_24_153143_create_availables_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_24_153143_create_availables_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_14_011317_create_transactions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_07_14_011317_create_transactions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_23_111838_create_payments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_23_111838_create_payments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_11_195821_create_specialities_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_09_11_195821_create_specialities_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_13_093715_create_medecins_types_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_09_13_093715_create_medecins_types_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_25_211212_create_prices_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_09_25_211212_create_prices_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/AmbulancesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/AmbulancesTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/AvailableTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/AvailableTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/HopitalsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/HopitalsTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/MedecinsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/MedecinsTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/QuartiersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/QuartiersTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/datepicker/js/tail.datetime.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/datepicker/js/tail.datetime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Confirm/status.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Confirm/status.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/hopital/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/hopital/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/hopital/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/hopital/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/medecin/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/medecin/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/vehicules/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/vehicules/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/medecin/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/medecin/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/medecin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/medecin/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/medecindisponibility/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/medecindisponibility/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/medecindisponibility/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/medecindisponibility/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/quartier/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/quartier/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/quartier/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/quartier/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/urgence/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/urgence/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/emails/contact/urgence-medecin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/contact/urgence-medecin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/body.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/body.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/head.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/slider.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/slider.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/paginate/test.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/paginate/test.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/payments/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/payments/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/payments/now.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/payments/now.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/urgence/cardiologue.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/urgence/cardiologue.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/urgence/diabetologue.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/urgence/diabetologue.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/urgence/nephrologue.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/urgence/nephrologue.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/urgence/neurologue.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/urgence/neurologue.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/urgence/pneumologue.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/urgence/pneumologue.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,33 +189,25 @@
     <favorites_list name="cardio" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/datepicker/js/tail.datetime.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="91" column="62" lean-forward="true" selection-start-line="91" selection-start-column="62" selection-end-line="91" selection-end-column="62" />
+            <state relative-caret-position="-1504">
+              <caret line="1228" column="36" lean-forward="true" selection-start-line="1228" selection-start-column="36" selection-end-line="1228" selection-end-column="36" />
               <folding>
-                <element signature="e#7#389#0#PHP" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PaymentController.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/medecindisponibility/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="91" column="10" selection-start-line="91" selection-start-column="10" selection-end-line="91" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/payments/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-end-line="62" selection-end-column="11" />
+            <state relative-caret-position="-340">
+              <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -100,18 +225,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>clearfix</find>
-      <find>sf-t5</find>
-      <find>ext-theme-colored2</find>
-      <find>ext-theme-colored</find>
-      <find>menu</find>
-      <find>contact</find>
-      <find>checkbox</find>
-      <find>3</find>
-      <find>text-theme-colored</find>
-      <find>overlay-theme-colored-8</find>
-      <find>iconbox-theme-colored2</find>
-      <find>iconbox</find>
       <find>bg-theme-colored</find>
       <find>btn-theme-colored</find>
       <find>line-bottom</find>
@@ -130,6 +243,18 @@
       <find>urgences</find>
       <find>medecincontroller</find>
       <find>paym</find>
+      <find>5</find>
+      <find>BUTTON</find>
+      <find>instance</find>
+      <find>tail</find>
+      <find>calendar-close</find>
+      <find>cancel</find>
+      <find>materialDatepicker</find>
+      <find>format</find>
+      <find>DDDD</find>
+      <find>MMMM</find>
+      <find>dateform</find>
+      <find>close</find>
     </findStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
@@ -149,57 +274,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2019_05_21_094106_create_urgences_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/urgence/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Person.php" />
+        <option value="$PROJECT_DIR$/app/Post.php" />
+        <option value="$PROJECT_DIR$/app/Price.php" />
+        <option value="$PROJECT_DIR$/app/Quartier.php" />
+        <option value="$PROJECT_DIR$/app/Role.php" />
+        <option value="$PROJECT_DIR$/app/Speciality.php" />
+        <option value="$PROJECT_DIR$/app/Structure.php" />
+        <option value="$PROJECT_DIR$/app/Transaction.php" />
         <option value="$PROJECT_DIR$/app/Urgence.php" />
-        <option value="$PROJECT_DIR$/resources/views/widgets/recent_medecin_disponibility.blade.php" />
-        <option value="$PROJECT_DIR$/app/Widgets/RecentMedecinDisponibility.php" />
-        <option value="$PROJECT_DIR$/resources/views/urgence_type/domicile.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/UrgenceFormReceivingMedecinController.php" />
-        <option value="$PROJECT_DIR$/resources/views/urgence/domicile.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/urgence_type/clinique.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/GiveMedecinAccessToAdminController.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/medecindisponibility/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/widgets/pneumologue_disponibility_widget.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/widgets/neurologue_disponibility_widget.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/widgets/nephrologue_disponibility_widget.blade.php" />
-        <option value="$PROJECT_DIR$/app/Widgets/DiabetologueDisponibilityWidget.php" />
-        <option value="$PROJECT_DIR$/app/Widgets/NephrologueDisponibilityWidget.php" />
-        <option value="$PROJECT_DIR$/app/Widgets/NeurologueDisponibilityWidget.php" />
-        <option value="$PROJECT_DIR$/app/Widgets/PneumologueDisponibilityWidget.php" />
-        <option value="$PROJECT_DIR$/database/seeds/AvailableTableSeeder.php" />
-        <option value="$PROJECT_DIR$/resources/views/urgence_type/test.blade.php" />
-        <option value="$PROJECT_DIR$/app/Available.php" />
+        <option value="$PROJECT_DIR$/app/Vehicule.php" />
+        <option value="$PROJECT_DIR$/app/Ville.php" />
         <option value="$PROJECT_DIR$/resources/views/paginate/test.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/widgets/cardiologue_disponibility_widget.blade.php" />
-        <option value="$PROJECT_DIR$/app/Widgets/CardiologueDisponibilityWidget.php" />
-        <option value="$PROJECT_DIR$/resources/views/widgets/diabetologue_disponibility_widget.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/urgence/cardiologue.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/paginate/date.blade.php" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_05_24_153143_create_availables_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/medecindisponibility/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ClientContactMedecinController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminContactMedecinController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/urgence/index.blade.php" />
+        <option value="$PROJECT_DIR$/config/adminlte.php" />
+        <option value="$PROJECT_DIR$/database/seeds/AvailableTableSeeder.php" />
+        <option value="$PROJECT_DIR$/resources/views/Confirm/status.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UrgenceFormReceivingCliniqueController.php" />
         <option value="$PROJECT_DIR$/resources/views/urgence/diabetologue.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/urgence/nephrologue.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/urgence/neurologue.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/urgence/pneumologue.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/UrgenceFormReceivingCliniqueController.php" />
-        <option value="$PROJECT_DIR$/database/seeds/MedecinsTableSeeder.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/MedecinValidateDisponibilityController.php" />
-        <option value="$PROJECT_DIR$/app/Widgets/UrgenceMedecinWidget.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/resources/views/urgence/neurologue.blade.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/resources/views/urgence/cardiologue.blade.php" />
+        <option value="$PROJECT_DIR$/app/Available.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/MedecinDisponibilityController.php" />
+        <option value="$PROJECT_DIR$/webpack.mix.js" />
+        <option value="$PROJECT_DIR$/resources/views/home/body.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/home/slider.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminMedecinController.php" />
-        <option value="$PROJECT_DIR$/public/js/dashboard.js" />
-        <option value="$PROJECT_DIR$/public/js/jquery.timepicker.min.js" />
-        <option value="$PROJECT_DIR$/resources/views/home/header.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/medecin/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminHopitalController.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/hopital/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/ambulance/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/vehicules/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/home/footer.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/config/adminlte.php" />
-        <option value="$PROJECT_DIR$/resources/views/price/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/price/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/price/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/PriceController.php" />
+        <option value="$PROJECT_DIR$/resources/views/home/head.blade.php" />
+        <option value="$PROJECT_DIR$/public/datetimepicker/js/datepicker.standalone.js" />
+        <option value="$PROJECT_DIR$/resources/views/datepicker/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/medecindisponibility/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/medecindisponibility/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/index.blade.php" />
+        <option value="$PROJECT_DIR$/public/datepicker/js/tail.datetime.js" />
       </list>
     </option>
   </component>
@@ -302,13 +427,25 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
       <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
       <path value="$PROJECT_DIR$/vendor/arrilot/laravel-widgets" />
+      <path value="$PROJECT_DIR$/vendor/srmklive/paypal" />
+      <path value="$PROJECT_DIR$/vendor/defuse/php-encryption" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-diactoros" />
+      <path value="$PROJECT_DIR$/vendor/laravel/passport" />
+      <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/vendor/league/event" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth2-server" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="480" />
-    <option name="y" value="580" />
-    <option name="width" value="1040" />
-    <option name="height" value="525" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="960" />
+    <option name="height" value="645" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -341,14 +478,19 @@
               <item name="cardio" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="payments" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cardio" type="b2602c69:ProjectViewProjectNode" />
               <item name="cardio" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="price" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="medecindisponibility" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cardio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -369,6 +511,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/storage/framework/views/fb59141aa66ed60c6b5309a9d972160f37b2fdb7.php&#10;true" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="jsx.switch.disabled" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../larastart" />
@@ -390,6 +533,190 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://cardio.dev" />
+          <option name="urlPath" value="/api/v1/register" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="email" />
+                <option name="value" value="zemagho48@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="07081999A" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="name" />
+                <option name="value" value="PASCAL TABI" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="role_id" />
+                <option name="value" value="3" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="phone" />
+                <option name="value" value="673004266" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="medecin_id" />
+                <option name="value" value="5" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="c_password" />
+                <option name="value" value="07081999A" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://cardio.dev" />
+          <option name="urlPath" value="/api/v1/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="email" />
+                <option name="value" value="zemagho48@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="07081999A" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="name" />
+                <option name="value" value="PASCAL TABI" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="role_id" />
+                <option name="value" value="3" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="phone" />
+                <option name="value" value="673004266" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="medecin_id" />
+                <option name="value" value="5" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="c_password" />
+                <option name="value" value="07081999A" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://cardio.dev" />
+          <option name="urlPath" value="/api/v1/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="email" />
+                <option name="value" value="zemagho48@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="07081999A" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="name" />
+                <option name="value" value="PASCAL TABI" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="role_id" />
+                <option name="value" value="3" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="phone" />
+                <option name="value" value="673004266" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="medecin_id" />
+                <option name="value" value="5" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://cardio.dev" />
+          <option name="urlPath" value="/api/v1/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="email" />
+                <option name="value" value="armel@cardiomobile.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="07081999A" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="https://cardio.dev" />
@@ -636,7 +963,22 @@
       <workItem from="1569232966823" duration="1314000" />
       <workItem from="1569312787982" duration="2113000" />
       <workItem from="1569401906663" duration="2114000" />
-      <workItem from="1569433280375" duration="7272000" />
+      <workItem from="1569433280375" duration="8145000" />
+      <workItem from="1569574547084" duration="8565000" />
+      <workItem from="1569838099554" duration="15625000" />
+      <workItem from="1569873391373" duration="2319000" />
+      <workItem from="1569917510392" duration="5899000" />
+      <workItem from="1571142733281" duration="2443000" />
+      <workItem from="1571252057582" duration="680000" />
+      <workItem from="1571284543649" duration="1222000" />
+      <workItem from="1571299469265" duration="38574000" />
+      <workItem from="1571403531756" duration="10699000" />
+      <workItem from="1571429376470" duration="230000" />
+      <workItem from="1571646378027" duration="13814000" />
+      <workItem from="1571685119377" duration="2593000" />
+      <workItem from="1571730331354" duration="24232000" />
+      <workItem from="1571816396514" duration="18451000" />
+      <workItem from="1571854747344" duration="2849000" />
     </task>
     <task id="LOCAL-00001" summary="My New Commit">
       <created>1563352839064</created>
@@ -648,8 +990,13 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="ExampleTest - 2019.10.21 at 12h 44m 11s.xml">
+      <configuration name="ExampleTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="789891000" />
+    <option name="totallyTimeSpent" value="938959000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -661,80 +1008,83 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49748743" visible="true" weight="0.20268457" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49748743" visible="true" weight="0.17785235" />
       <window_info id="Structure" order="1" sideWeight="0.5025126" side_tool="true" weight="0.24905375" />
       <window_info id="Favorites" order="2" sideWeight="0.5025126" side_tool="true" weight="0.24905375" />
       <window_info id="npm" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32636657" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32996634" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32960895" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32850242" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32850242" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49621785" weight="0.1756374" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5033557" side_tool="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32848838" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49621785" weight="0.16715117" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5033557" side_tool="true" weight="0.3282123" />
       <window_info anchor="bottom" id="Quokka" order="12" weight="0.32996634" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="13" weight="0.32996634" />
       <window_info anchor="bottom" id="File Transfer" order="14" sideWeight="0.49394855" visible="true" weight="0.21104816" />
       <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32996634" />
-      <window_info anchor="bottom" id="REST Client" order="16" weight="0.52818036" />
+      <window_info anchor="bottom" id="REST Client" order="16" weight="0.4567039" />
       <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="17" sideWeight="0.4996215" weight="0.32996634" />
       <window_info anchor="bottom" id="DB Execution Console" order="18" />
       <window_info anchor="bottom" id="Messages" order="19" weight="0.32850242" />
       <window_info anchor="bottom" id="RNConsole" order="20" sideWeight="0.4966443" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Console" order="21" weight="0.32854864" />
       <window_info anchor="right" id="PlantUML" order="0" />
       <window_info anchor="right" id="Schema2Json" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="right" id="Database" order="5" sideWeight="0.49915966" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="5" sideWeight="0.49915966" weight="0.3291262" />
       <window_info anchor="right" id="Nativescript Palette" order="6" />
-      <window_info anchor="right" id="Remote Host" order="7" sideWeight="0.49915966" visible="true" weight="0.10805369" />
-      <window_info anchor="right" id="Key Promoter X" order="8" weight="0.329296" />
-      <window_info anchor="right" id="DB Browser" order="9" sideWeight="0.50084037" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" id="Key Promoter X" order="7" weight="0.329296" />
+      <window_info anchor="right" id="DB Browser" order="8" sideWeight="0.50084037" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" id="Remote Host" order="9" sideWeight="0.49915966" weight="0.10805369" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49748743" visible="true" weight="0.2785235" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49748743" visible="true" weight="0.21409395" />
       <window_info id="Structure" order="1" sideWeight="0.5025126" side_tool="true" weight="0.24905375" />
       <window_info id="Favorites" order="2" sideWeight="0.5025126" side_tool="true" weight="0.24905375" />
       <window_info id="npm" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32636657" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32996634" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32960895" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32850242" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32850242" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49621785" weight="0.1756374" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5060514" side_tool="true" weight="0.21104816" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32848838" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49621785" weight="0.16715117" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5033557" side_tool="true" weight="0.3282123" />
       <window_info anchor="bottom" id="Quokka" order="12" weight="0.32996634" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="13" weight="0.32996634" />
-      <window_info active="true" anchor="bottom" id="File Transfer" order="14" sideWeight="0.49394855" visible="true" weight="0.21221864" />
+      <window_info anchor="bottom" id="File Transfer" order="14" sideWeight="0.49394855" visible="true" weight="0.21104816" />
       <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32996634" />
-      <window_info anchor="bottom" id="REST Client" order="16" weight="0.52818036" />
+      <window_info anchor="bottom" id="REST Client" order="16" weight="0.4567039" />
       <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="17" sideWeight="0.4996215" weight="0.32996634" />
       <window_info anchor="bottom" id="DB Execution Console" order="18" />
       <window_info anchor="bottom" id="Messages" order="19" weight="0.32850242" />
+      <window_info anchor="bottom" id="RNConsole" order="20" sideWeight="0.4966443" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Console" order="21" weight="0.32854864" />
       <window_info anchor="right" id="PlantUML" order="0" />
       <window_info anchor="right" id="Schema2Json" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="right" id="Database" order="5" sideWeight="0.49915966" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="5" sideWeight="0.49915966" weight="0.3291262" />
       <window_info anchor="right" id="Nativescript Palette" order="6" />
-      <window_info anchor="right" id="Remote Host" order="7" sideWeight="0.49915966" weight="0.16717096" />
-      <window_info anchor="right" id="Key Promoter X" order="8" weight="0.329296" />
-      <window_info anchor="right" id="DB Browser" order="9" sideWeight="0.50084037" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" id="Key Promoter X" order="7" weight="0.329296" />
+      <window_info anchor="right" id="DB Browser" order="8" sideWeight="0.50084037" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" id="Remote Host" order="9" sideWeight="0.49915966" weight="0.10805369" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -796,381 +1146,334 @@
           <line>7</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/home/head.blade.php</url>
-          <line>66</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/arrilot/laravel-widgets/tests/Support/TestApplicationWrapper.php">
+    <entry file="file://$PROJECT_DIR$/database/seeds/AvailableTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1275">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        <state relative-caret-position="19">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/arrilot/laravel-widgets/.travis.yml">
+    <entry file="file://$PROJECT_DIR$/app/Urgence.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/errors/minimal.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UrgenceFormReceivingDomicileController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminContactMedecinController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/widgets/cardiologue_disponibility_widget.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/widgets/diabetologue_disponibility_widget.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/paginate/test.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-73">
-          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/urgence_type/test.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-442">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/urgence/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="85">
+          <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/urgence/domicile.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/urgence_type/clinique.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/urgence_type/clinique2.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Widgets/CardiologueDisponibilityWidget.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-          <folding>
-            <element signature="e#31#49#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/urgence/diabetologue.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="92" column="23" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/urgence/nephrologue.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="92" column="23" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/urgence/neurologue.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="92" column="23" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/urgence/pneumologue.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="92" column="23" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/urgence/cardiologue.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ReceivingCliniquedataController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/MedecinsTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="74" column="36" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UrgenceFormReceivingCliniqueController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
-          <folding>
-            <element signature="e#40#58#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MedecinValidateDisponibilityController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MedecinDisponibilityController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-867">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MedecinReceivingRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1377">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Widgets/UrgenceMedecinWidget.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding>
-            <element signature="e#31#49#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Widgets/PneumologueDisponibilityWidget.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#31#49#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
+    <entry file="file://$PROJECT_DIR$/resources/views/urgence/index.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-172" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/slider.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/custom2.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/jquery.timepicker.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="81" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/head.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="53" column="57" lean-forward="true" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminMedecinController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="56" column="20" lean-forward="true" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="29" />
-          <folding>
-            <element signature="e#40#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="e#40#58#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminHopitalController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="44" column="6" lean-forward="true" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/medecin/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/hopital/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/vehicules/create.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/Confirm/status.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/ambulance/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="91" column="62" lean-forward="true" selection-start-line="91" selection-start-column="62" selection-end-line="91" selection-end-column="62" />
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
           <folding>
-            <element signature="e#7#389#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/payments/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="35" selection-end-line="35" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/price/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/price/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/price/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/adminlte.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="199" column="17" lean-forward="true" selection-start-line="199" selection-start-column="17" selection-end-line="199" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/payments/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PaymentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="91" column="10" selection-start-line="91" selection-start-column="10" selection-end-line="91" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PriceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1745">
-          <caret line="108" column="37" selection-start-line="108" selection-start-column="37" selection-end-line="108" selection-end-column="37" />
-          <folding>
-            <element signature="e#40#56#0#PHP" expanded="true" />
+            <element signature="e#63#98#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/payments/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-end-line="62" selection-end-column="11" />
+        <state relative-caret-position="-408" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PaymentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="69" column="3" lean-forward="true" selection-start-line="69" selection-start-column="3" selection-end-line="72" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/users/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="75" column="149" selection-start-line="75" selection-start-column="149" selection-end-line="75" selection-end-column="149" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UrgenceFormReceivingCliniqueController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="40" column="7" lean-forward="true" selection-start-line="40" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ReceivingCliniquedataController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1360">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/urgence/nephrologue.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="44" column="120" selection-start-line="44" selection-start-column="120" selection-end-line="44" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/urgence/diabetologue.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="44" column="120" selection-start-line="44" selection-start-column="120" selection-end-line="44" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/urgence/neurologue.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="44" column="107" selection-start-line="44" selection-start-column="107" selection-end-line="44" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dentalpro/includes/twitter/config.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="232" column="59" selection-start-line="232" selection-start-column="59" selection-end-line="232" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/urgence/pneumologue.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/all.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dentalpro/css/menuzord-skins/menuzord-bottom-trace.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dentalpro/css/lightbox/close.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dentalpro/css/lightbox/next.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dentalpro/css/images/ui-icons_444444_256x240.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dentalpro/css/colors/theme-skin-color-set1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dentalpro/css/style-main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144342" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dentalpro/js/jquery-plugin-collection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dentalpro/css/css-plugin-collections.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/vendor/adminlte/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/vendor/adminlte/page.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="130" column="5" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/urgence/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-127">
+          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Available.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/users/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MedecinDisponibilityController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="153" column="33" lean-forward="true" selection-start-line="153" selection-start-column="33" selection-end-line="153" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="170" column="81" selection-start-line="170" selection-start-column="81" selection-end-line="170" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/urgence/cardiologue.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home/body.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <element signature="e#134#141#1" expanded="true" />
+            <element signature="e#133#140#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home/slider.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/datetimepicker/js/materialDateTimePicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/datetimepicker/js/datepicker.standalone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="364" column="72" selection-start-line="364" selection-start-column="72" selection-end-line="364" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/datepicker/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home/head.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-253">
+          <caret line="102" column="31" lean-forward="true" selection-start-line="102" selection-start-column="31" selection-end-line="102" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/medecindisponibility/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="102" column="17" lean-forward="true" selection-start-line="102" selection-start-column="17" selection-end-line="102" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/medecindisponibility/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="62" column="40" lean-forward="true" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/medecindisponibility/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340">
+          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/datepicker/js/tail.datetime.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1504">
+          <caret line="1228" column="36" lean-forward="true" selection-start-line="1228" selection-start-column="36" selection-end-line="1228" selection-end-column="36" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

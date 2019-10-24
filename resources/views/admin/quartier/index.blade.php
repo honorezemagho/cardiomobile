@@ -16,6 +16,7 @@
         <tr>
             <th> Id</th>
             <th> Nom </th>
+            <th> Arrondissement </th>
             <th>Ville</th>
         </tr>
         </thead>
@@ -27,6 +28,7 @@
                 <tr>
                     <td> {{$quartier->id}} </td>
                     <td> {{$quartier->name}}</td>
+                    <td> {{$quartier->arrondissement->name}}</td>
                     <td> {{$quartier->ville->name}} </td>
                 </tr>
             @endforeach

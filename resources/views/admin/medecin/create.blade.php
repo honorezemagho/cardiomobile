@@ -37,7 +37,13 @@
 
     <div class = "form-group">
         {!! Form::label('Type', 'Type de Médecin: ') !!}
-        {!! Form::select('type_id', [null => 'Veuillez choisir un type'] + $types , null, ['class' => 'form-control']) !!}
+        {!! Form::select('type_id', [null => 'Veuillez choisir un type'] + $types, null, ['class' => 'form-control']) !!}
+    </div>
+
+
+    <div class = "form-group">
+        {!! Form::label('hopital_id', 'Structure Hospitalière: ') !!}
+        {!! Form::select('hopital_id', [null => 'Veuillez choisir une Structure Hospitalière'] + $hopitaux , null, ['class' => 'form-control']) !!}
     </div>
 
 

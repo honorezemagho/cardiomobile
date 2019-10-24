@@ -22,6 +22,7 @@ class CreateVehiculesTable extends Migration
             $table->integer('phone')->unique();
             $table->string('matricule');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

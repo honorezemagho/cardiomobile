@@ -1,4 +1,3 @@
-
 <body >
 <div id="wrapper">
 
@@ -8,15 +7,15 @@
             <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
                 <div class="container col-sm-2">
                     <nav id="menuzord" class="menuzord blue no-bg">
-                        <a class="menuzord-brand pull-left flip mb-15 bg-dark-transparent-9"   href="/">CARDIO<span class="text-theme-colored">MOBILE</span></a>
+                        <a class="menuzord-brand pull-left flip mb-15"   href="/"><span class="text-theme-colored">CARDIOMOBILE</span></a>
                     </nav>
                 </div>
 
                 <div class="container col-sm-10">
-                <marquee behavior="scroll" direction="left" scrollamount="10">
-                    <h3> Pour Toute Urgence, Composez le <b>"+237 6 76 66 76 26"</b>, disponible 24H/24, 7J/7</h3>
-                </marquee>
-            </div>
+                    <marquee behavior="scroll" direction="left" scrollamount="10">
+                        <h3> Pour Toute Urgence, Composez le <b>"+237 6 76 66 76 26"</b>, disponible 24H/24, 7J/7</h3>
+                    </marquee>
+                </div>
             </div>
         </div>
     </header>

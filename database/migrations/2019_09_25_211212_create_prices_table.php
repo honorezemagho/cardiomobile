@@ -19,6 +19,7 @@ class CreatePricesTable extends Migration
             $table->integer('price');
             $table->string('details');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

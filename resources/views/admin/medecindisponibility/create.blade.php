@@ -15,8 +15,8 @@
 
     @can('is_admin')
     <div class = "form-group">
-        {!! Form::label('medecin_id', 'Id du Médécin:') !!}
-        {!! Form::number('medecin_id',  null, ['class' => 'form-control']) !!}
+        {!! Form::label('medecin_id', 'Choix du Médecin:') !!}
+        {!! Form::select('medecin_id', [null => 'Veuillez choisir un médecin'] + $medecins, null , ['class' => 'form-control']) !!}
     </div>
     @endcan
 
@@ -32,6 +32,11 @@
             <input type="hidden" value="{{Auth::user()->medecin_id}}" name="medecin_id">
         </div>
     @endcan
+
+    <div class = "form-group">
+        {!! Form::label('price', 'Prix:') !!}
+        {!! Form::number('price',  null, ['class' => 'form-control']) !!}
+    </div>
 
 
     <div class = "form-group">
@@ -49,14 +54,13 @@
             static: "#datetime-demo-holder",
             classNames: "theme-default",
             startOpen: false,
-            stayOpen: false,
+            stayOpen: true,
             dateFormat: 'dd-mm-YYYY',
             locale: "fr",
             closeButton: true,
             position : 'top',
             dateBlacklist: true,
             timeFormat: "HH:ii",
-            dateStart: new Date(),
             tooltips: [
             {
             date: "2020-01-01",

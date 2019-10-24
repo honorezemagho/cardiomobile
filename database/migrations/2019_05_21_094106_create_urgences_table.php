@@ -31,6 +31,7 @@ class CreateUrgencesTable extends Migration
             $table->integer('expires')->default(0);
             $table->integer('payment_status')->default(0);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

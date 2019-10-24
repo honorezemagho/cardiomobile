@@ -59,7 +59,6 @@ class UrgenceFormReceivingCliniqueController extends Controller
             ->where('id', $request['available_id'])
             ->update(['expires' => 1]);
 
-
         $request['medecin_id'] = Available::where('id', $request['available_id'])->value('medecin_id');
 
         $locale = 'fr_FR';
@@ -104,7 +103,7 @@ class UrgenceFormReceivingCliniqueController extends Controller
             $response = $request->getBody();
 
             $header = " Contacter Un Médecin";
-            $messages = "Merci de nous avoir contactés, nous vous répondrons sous peu";
+            $messages = "Votre rendez-vous a bien été pris en compte, vous recevrez une confirmation par message";
             return view('Confirm.status', compact('messages', 'header'));
         }
     }
@@ -114,12 +113,15 @@ class UrgenceFormReceivingCliniqueController extends Controller
     {
         //
         $data = $request->all();
+        $now = Carbon::now('Africa/Douala');
+
 
         if($request['speciality_id'] == 1){
 
             $disponibility = Available::where('type_id', 1)
                 ->where('speciality_id', 1)
                 ->where('expires', 0)
+                ->where('datetime', '>=', Carbon::now('Africa/Douala'))
                 ->orderBy('datetime', 'asc')
                 ->get();
 
@@ -132,6 +134,7 @@ class UrgenceFormReceivingCliniqueController extends Controller
             $disponibility = Available::where('type_id', 1)
                 ->where('speciality_id', 2)
                 ->where('expires', 0)
+                ->where('datetime', '>=', Carbon::now('Africa/Douala'))
                 ->orderBy('datetime', 'asc')
                 ->get();
 
@@ -145,6 +148,7 @@ class UrgenceFormReceivingCliniqueController extends Controller
             $disponibility = Available::where('type_id', 1)
                 ->where('speciality_id', 3)
                 ->where('expires', 0)
+                ->where('datetime', '>=', Carbon::now('Africa/Douala'))
                 ->orderBy('datetime', 'asc')
                 ->get();
 
@@ -156,6 +160,7 @@ class UrgenceFormReceivingCliniqueController extends Controller
             $disponibility = Available::where('type_id', 1)
                 ->where('speciality_id', 4)
                 ->where('expires', 0)
+                ->where('datetime', '>=', Carbon::now('Africa/Douala'))
                 ->orderBy('datetime', 'asc')
                 ->get();
 
@@ -168,6 +173,7 @@ class UrgenceFormReceivingCliniqueController extends Controller
             $disponibility = Available::where('type_id', 1)
                 ->where('speciality_id', 5)
                 ->where('expires', 0)
+                ->where('datetime', '>=', Carbon::now('Africa/Douala'))
                 ->orderBy('datetime', 'asc')
                 ->get();
 

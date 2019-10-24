@@ -2,4 +2,4 @@
 /vendor
 .idea/inspectionProfiles/
 public/.well-known/
-
+node_modules

@@ -18,7 +18,7 @@
 
     @endif
 
-    <h1>  Edit Users </h1>
+    <h1>  Modification de profil Utilisateur </h1>
 
     <div class="row">
 
@@ -68,24 +68,17 @@
         </div>
 
 
-
         <div class = "form-group">
             {!! Form::Submit ('Modifier', ['class' => 'btn btn-primary btn-group mr-2'] ) !!}
 
-
         {!! Form::close() !!}
 
-
-
             {!! Form::open(['method' => 'DELETE', 'action' => ['AdminUsersController@destroy', $user->id], 'class'=>'btn-group mr-2 visible-xs']) !!}
-
 
                 {!! Form::Submit ('Supprimer', ['class' => 'btn btn-danger ' ], ['data-toggle' => 'modal'],['data-target' => '.bd-example-modal-lg']  ) !!}
              </div>
 
               {!! Form::close() !!}
-
-
 
 
         </div>

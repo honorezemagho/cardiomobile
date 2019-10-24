@@ -15,7 +15,7 @@ class AmbulancesTableSeeder extends Seeder
         //
         DB::table('ambulances')->insert([[
             'name' => 'FLESH',
-            'hopital_id' => 1,
+            'hopital_id' => 2,
             'ville_id' => 1,
             'quartier_id' => 2,
             'phone' => 675902345,
@@ -25,7 +25,7 @@ class AmbulancesTableSeeder extends Seeder
         ], 
         [
             'name' => 'REMOTE',
-            'hopital_id' => 2,
+            'hopital_id' => 1,
             'ville_id' => 2,
             'quartier_id' => 4,
             'phone' => 675902345,

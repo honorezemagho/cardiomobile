@@ -18,13 +18,15 @@ class QuartiersTableSeeder extends Seeder
 
             'name' => 'EMANA',
             'ville_id' => 1,
-                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'arrondissement_id' => 3,
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ],
 
             [
                 'name' => 'BASTOS',
                 'ville_id' => 1,
+                'arrondissement_id' => 3,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ],
@@ -33,6 +35,7 @@ class QuartiersTableSeeder extends Seeder
 
                 'name' => 'AKWA-NORD',
                 'ville_id' => 2,
+                'arrondissement_id' => 1,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ],
@@ -40,6 +43,7 @@ class QuartiersTableSeeder extends Seeder
             [
                 'name' => 'AKWA-SUD',
                 'ville_id' => 2,
+                'arrondissement_id' => 1,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ],

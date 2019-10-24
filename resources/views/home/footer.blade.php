@@ -7,7 +7,7 @@
         <div class="row border-bottom-black">
             <div class="col-sm-6 col-md-3">
                 <div class="widget dark">
-                    <h3> <span class="text-white">CARDIO</span><span  class="text-theme-colored ">MOBILE </span></h3>
+                    <h3><span  class="text-theme-colored ">CARDIOMOBILE </span></h3>
                     <p>La Solution N°1 pour le transport des malades au Cameroun.</p>
                     <ul class="list-inline mt-5">
                         <li class="m-0 pl-10 pr-10"> <i class="fa fa-map-marker text-theme-colored mr-5"></i> <a class="text-gray">Akwa, Immeuble LGQ</a> </li>

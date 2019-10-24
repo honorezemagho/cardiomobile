@@ -3,15 +3,14 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Ambulance;
-use App\Medecin;
-use App\Vehicule;
-use App\Quartier;
-use App\Ville;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class matricule extends Model
 {
     //
+    use SoftDeletes;
+    protected $dates = ['deleted_at'];
+
     protected $fillable = ['name','medecin_id', 'vehicule_id', 'ambulance_id'];
 
     public function quartier(){

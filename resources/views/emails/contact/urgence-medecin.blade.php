@@ -29,6 +29,7 @@ Numéro de Transaction : {{$data['transaction']}}<br><br>
 
 
 Si vous êtes disponibles à la date et heure sollicitée, merci de cliquer sur le bouton pour le confirmer
+
 <?php $transaction = $data['transaction'];?>
 
 @component('mail::button', ['url' => "https://cardio.dev/urgence/confirm-disponibility/$transaction/$medecin_matricule/$medecin_phone"])

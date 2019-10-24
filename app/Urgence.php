@@ -3,10 +3,15 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 
 class Urgence extends Model
 {
+
+    use SoftDeletes;
+    protected $dates = ['deleted_at'];
+
     protected $fillable = ['name','quartier_id', 'ville_id', 'phone', 'description', 'medecin_id', 'medecin_matricule', 'medecin_phone',
         'shortcode', 'datetime', 'transaction_id', 'expires', 'available_id', 'urgence_type', 'speciality_id'];
 

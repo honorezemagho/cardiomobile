@@ -17,6 +17,7 @@ class CreateTransactionsTable extends Migration
             $table->bigIncrements('id');
             $table->string('transaction')->unique();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

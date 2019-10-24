@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Arrondissement;
 use Illuminate\Http\Request;
 use App\Quartier;
 use App\Ville;
-use App\Http\Requests;
-use App\User;
 use App\Http\Requests\VilleCreateRequest;
+use Illuminate\Support\Facades\DB;
 
 class AdminQuartierController extends Controller
 {
@@ -32,7 +32,8 @@ class AdminQuartierController extends Controller
     {
         //
         $villes = Ville::pluck('name', 'id')->all();
-        return view('admin.quartier.create', compact('villes'));
+        $arrondissements = Arrondissement::pluck('name', 'id')->all();
+        return view('admin.quartier.create', compact('villes', 'arrondissements'));
     }
 
     /**
@@ -50,6 +51,15 @@ class AdminQuartierController extends Controller
         Quartier::create($input);
 
         return redirect('/admin/quartier');
+    }
+
+
+    public function arrondissement($id) {
+
+        $arrondissements = DB::table("arrondissements")->where("ville_id",$id)->pluck("name","id");
+
+        return json_encode( $arrondissements);
+
     }
 
     /**

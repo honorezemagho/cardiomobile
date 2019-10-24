@@ -132,7 +132,7 @@
     datetime.defaults = {
         animate: true,                  // [0.4.0]          Boolean
         classNames: false,              // [0.3.0]          Boolean, String, Array, null
-        closeButton: true,              // [0.4.5]          Boolean
+        closeButton: false,              // [0.4.5]          Boolean
         dateFormat: "YYYY-mm-dd",       // [0.1.0]          String (PHP similar Date)
         dateStart: false,               // [0.4.0]          String, Date, Integer, False
         dateRanges: [],                 // [0.3.0]          Array
@@ -147,10 +147,10 @@
         timeFormat: "HH:ii",         // [0.1.0]          String (PHP similar Date)
         timeHours: true,                // [0.4.13][UPD]    Integer, Boolean, null
         timeMinutes: true,              // [0.4.13][UPD]    Integer, Boolean, null
-        timeSeconds: 0,                 // [0.4.13][UPD]    Integer, Boolean, null
+        timeSeconds: false,                 // [0.4.13][UPD]    Integer, Boolean, null
         timeIncrement: true,            // [0.4.5]          Boolean
         timeStepHours: 1,               // [0.4.3]          Integer
-        timeStepMinutes: 5,             // [0.4.3]          Integer
+        timeStepMinutes: 15,             // [0.4.3]          Integer
         timeStepSeconds: 30,             // [0.4.3]          Integer
         today: true,                    // [0.4.0]          Boolean
         tooltips: [],                   // [0.4.0]          Array
@@ -597,7 +597,10 @@
 
             // Render Close
             if(this.con.closeButton && !sta){
-                var close = create("BUTTON", "calendar-close"), self = this;
+               var close =  createHTMLDocument('<button> Ok </button>'),self = this;
+
+                /*var close = create("BUTTON", "calendar-close"), self = this;*/
+
                 close.addEventListener("click", function(event){
                     event.preventDefault();
                     self.close();
@@ -1171,7 +1174,7 @@
          */
         fetchDate: function(date){
             date = parse(date || false) || this.view.date;
-            var inp = this.dt.querySelectorAll("input[type=number]");
+            var inp = this.dt.querySelectorAll("input[inputmode=numeric]");
             if(inp && inp.length == 3){
                 date.setHours(inp[0].value || 0, inp[1].value || 0, inp[2].value || 0, 0);
             }
@@ -1226,7 +1229,7 @@
                 self.calcPosition();
             }
             (function fade(){
-                if((e.opacity = parseFloat(e.opacity)+0.125) >= 1){
+                if((e.opacity = parseFloat(e.opacity)+0.925) >= 1){
                     cREM(self.dt, "calendar-idle");
                     cADD(self.dt, "calendar-open");
                     return self.trigger("open");
@@ -1268,7 +1271,7 @@
          |  @since  0.4.0 [0.1.0]
          */
         toggle: function(){
-            if(cHAS(this.dt, "calendar-open")){
+            if(cHAS(this.dt, "calendar-open") ){
                 return this.close();
             }
             return cHAS(this.dt, "calendar-close")? this.open(): this;

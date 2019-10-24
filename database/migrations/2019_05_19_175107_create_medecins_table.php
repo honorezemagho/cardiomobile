@@ -20,10 +20,15 @@ class CreateMedecinsTable extends Migration
             $table->integer('quartier_id');
             $table->integer('speciality_id')->nullable();
             $table->integer('type_id')->nullable();
+            $table->integer('code_id')->nullable();
+            $table->integer('hopital_id')->nullable();
+            $table->integer('photo_id')->nullable();
             $table->integer('phone');
+            $table->integer('status')->default(0);
             $table->string('matricule');
             $table->string('email');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -28,7 +28,10 @@
                             <tr>
                                 <th> Date </th>
                                 <th> Heure</th>
+                                <th>Durée</th>
                                 <th>Nom du Médecin</th>
+                                <th>Prix</th>
+                                <th>Choisir</th>
                             </tr>
 
                             </thead>
@@ -39,10 +42,12 @@
                                 <tr>
                                     <td>{{ \Carbon\Carbon::parseFromLocale($available->datetime, $locale)
                                     ->IsoFormat(' Do MMMM YYYY')}}</td>
-                                    <td>{{ \Carbon\Carbon::parseFromLocale($available->datetime, $locale)->toTimeString()}}</td>
+                                    <td>{{ \Carbon\Carbon::parseFromLocale($available->datetime, $locale)->format('H:i')}}</td>
+                                    <td>15 Minutes</td>
                                     <td>DR. {{$available->medecin->name}}</td>
+                                    <td>15 000</td>
                                     <td>
-                                        <input class="custom-control-input" type="radio" name="available_id"  value={{$available->id}} >
+                                        <input class="custom-control-input" type="radio" name="available_id"  value={{$available->id}}>
                                         <label class="custom-control-label" for="available_id"></label>
                                         <h5 class="text-theme-colored custom-control-input">Choisir</h5>
                                     </td>
@@ -51,7 +56,6 @@
 
                             </tbody>
                         </table>
-
 
 
 

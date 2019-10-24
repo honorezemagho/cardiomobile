@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Available;
+use http\Env\Response;
 use Illuminate\Http\Request;
 use App\Ville;
 use App\Quartier;
@@ -142,7 +143,17 @@ class IndexController extends Controller
     {
         //
         $data = Available::paginate(5);
+        return $data;
+
         return view('paginate.test', compact('data'));
+    }
+
+    public function date(){
+        return view('paginate.date');
+        }
+
+    public function datepicker(){
+        return view('datepicker.index');
     }
 
 }

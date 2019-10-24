@@ -1,3 +1,43 @@
+POST https://cardio.dev/api/v1/register?email=zemagho48@gmail.com&password=07081999A&name=PASCAL TABI&role_id=3&phone=673004266&medecin_id=5&c_password=07081999A
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-21T123853.500.html
+
+###
+
+POST https://cardio.dev/api/v1/register?email=zemagho48@gmail.com&password=07081999A&name=PASCAL TABI&role_id=3&phone=673004266&medecin_id=5&c_password=07081999A
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-21T123842.200.json
+
+###
+
+POST https://cardio.dev/api/v1/login?email=zemagho48@gmail.com&password=07081999A&name=PASCAL TABI&role_id=3&phone=673004266&medecin_id=5&c_password=07081999A
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-21T123818.401.json
+
+###
+
+POST https://cardio.dev/api/v1/login?email=zemagho48@gmail.com&password=07081999A&name=PASCAL TABI&role_id=3&phone=673004266&medecin_id=5
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-21T123100.401.json
+
+###
+
+POST https://cardio.dev/api/v1/login?email=armel@cardiomobile.com&password=07081999A
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-10-21T122059.200.json
+
+###
+
 GET https://cardio.dev/api/contact/medecin
 Accept: */*
 Cache-Control: no-cache

@@ -116,35 +116,12 @@ return [
             'can' => 'is_admin',
         ],
 
-        'ACCOUNT SETTINGS',
+        'PROFIL',
         [
-
 
             'text'    => 'Profil',
             'url'     => "admin",
             'icon'    => 'users',
-            'submenu' => [
-                [
-                    'text' => 'Mon Profil',
-                    'url'  => 'admin',
-                    'icon' => 'user',
-                    'can' => 'is_admin',
-                ],
-                [
-                    'text' => 'Mon Profil',
-                    'url'  => 'admin',
-                    'icon' => 'user',
-                    'can' => 'is_gestionnaire'
-
-                ],
-                [
-                    'text' => 'Mon Profil',
-                    'url'  => 'admin',
-                    'icon' => 'user',
-                    'can' => 'is_medecin'
-
-                ],
-            ],
         ],
 
 
@@ -236,6 +213,29 @@ return [
                 ],
             ],
             ],
+
+
+
+
+
+                [
+                    'text'    => 'Arrondissement',
+                    'icon'    => 'hospital-o',
+                    'url'     => 'admin/ville',
+                    'can' => 'is_admin',
+                    'submenu' => [
+                        [
+                            'text' => 'Afficher',
+                            'url'  => 'admin/arrondissement',
+                            'icon_color' => 'blue',
+                        ],
+                        [
+                            'text'    => 'Ajouter',
+                            'url'     => 'admin/arrondissement/create',
+                            'icon_color' => 'yellow',
+                        ],
+                    ],
+                ],
 
                 [
                     'text'    => 'Quartier',
@@ -583,38 +583,19 @@ return [
         ],
 
         [
-            'text'    => 'Urgences',
+            'text'    => 'Rendez-vous',
             'url'     => 'admin/urgences',
-            'icon'   => 'user-md',
+            'icon'   => 'calendar-times-o',
             'can' => 'is_medecin',
-            'submenu' => [
-                [
-                    'text'    => 'Mes Urgences',
-                    'url'     => '/admin/urgences',
-                    'icon_color' => 'red',
-                ],
-            ],
         ],
 
 
         [
-            'text'    => 'Disponibilité Médecins',
+            'text'    => 'Mes Disponibilités',
             'url'     => 'admin/medecin/available',
-            'icon'   => 'user-md',
+            'icon'   => 'clock-o',
             'icon_color' => 'blue',
             'can' => 'is_medecin',
-            'submenu' => [
-                [
-                    'text' => 'Afficher',
-                    'url'  => 'admin/medecin/available',
-                    'icon_color' => 'blue',
-                ],
-                [
-                    'text'    => 'Ajouter une disponibilité',
-                    'url'     => 'admin/medecin/available/create',
-                    'icon_color' => 'red',
-                ],
-            ],
         ],
 ],
 

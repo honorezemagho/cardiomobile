@@ -3,10 +3,14 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Hopital extends Model
 {
     //
+    use SoftDeletes;
+    protected $dates = ['deleted_at'];
+
     protected $fillable = ['name', 'ville_id','quartier_id', 'email', 'phone', 'phone2', 'structure_id'];
 
 

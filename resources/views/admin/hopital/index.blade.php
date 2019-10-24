@@ -1,6 +1,6 @@
-@extends('adminlte::page');
+@extends('adminlte::page')
 
-@section('content');
+@section('content')
 
     <h1 class="text-center"> Structures Hospitalières </h1>
 

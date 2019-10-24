@@ -9,6 +9,7 @@
     <thead>
     <tr>
         <th> Id</th>
+        <th>Photo</th>
         <th> Nom</th>
         <th class="hidden-xs"> Ville</th>
         <th class="hidden-xs"> Quartier</th>
@@ -26,6 +27,7 @@
 
             <tr>
                 <td>{{$medecin->id}}</td>
+                <td class="hidden-xs"><img height="50" src="{{$medecin->photo ? $medecin->photo->file: '/images/default.jpg'}}" alt=""></td>
                 <td class="visible-xs">
                     @can('is_admin')
                         <a href="{{ URL::action('AdminMedecinController@edit', $medecin->id) }}">
@@ -47,6 +49,7 @@
                 <td class="hidden-xs">{{$medecin->email}}</td>
                 <td>{{$medecin->phone}}</td>
                 <td>{{$medecin->type->name}}</td>
+                <td>{{$medecin->code->code}}</td>
 
                 <td class="hidden-xs">
                     <a class="btn btn-primary" href="{{ URL::action('AdminMedecinController@edit',  $medecin->id) }}">Modifier</a>

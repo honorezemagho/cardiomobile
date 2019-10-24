@@ -22,6 +22,7 @@ class AvailableTableSeeder extends Seeder
             'type_id' => 1,
             'speciality_id' => 2,
             'expires' => 0,
+            'price' => 10000,
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ], [
@@ -31,6 +32,7 @@ class AvailableTableSeeder extends Seeder
             'type_id' => 1,
             'speciality_id' => 2,
             'expires' => 0,
+            'price' => 12000,
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ],
@@ -41,6 +43,7 @@ class AvailableTableSeeder extends Seeder
                 'type_id' => 1,
                 'speciality_id' => 1,
                 'expires' => 0,
+                'price' => 15000,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ],
@@ -51,6 +54,7 @@ class AvailableTableSeeder extends Seeder
                 'type_id' => 1,
                 'speciality_id' => 1,
                 'expires' => 0,
+                'price' => 12500,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ]

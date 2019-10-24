@@ -21,6 +21,7 @@ class CreateHopitalsTable extends Migration
             $table->integer('structure_id');
             $table->integer('phone');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -15,7 +15,13 @@
 
     Route::get('/', 'IndexController@index');
 
+    Route::get('/datep', 'IndexController@datepicker');
+
+    Route::get('/date', 'IndexController@date');
+
     Route::get('/manual', 'IndexController@manual');
+
+    Route::post('/photo/upload', 'AdminMedecinController@upload');
 
     Route::get('states/get/{id}', 'IndexController@getStates');
 
@@ -24,6 +30,10 @@
     Route::resource('/itineraire', 'ItineraireController');
 
     Route::get('/contact', 'IndexController@contact');
+
+    Route::get('/medecin/upload-photo/{code}/{medecin_matricule}', 'AdminMedecinController@medecinuploadphoto');
+
+    Route::get('/paginate', 'IndexController@paginate');
 
 
     Route::prefix('urgence')->group(function () {
@@ -38,8 +48,6 @@
 
         Route::get('/receiving/clinique/save/paginate', 'UrgenceFormReceivingCliniqueController@cardiologue');
 
-        Route::post('/receiving/domicile', 'UrgenceFormReceivingController@store');
-
         Route::get('/disponibility', 'IndexController@disponibility');
 
         Route::get('/speciality', 'IndexController@speciality');
@@ -49,7 +57,15 @@
     });
 
 
-        Route::get('/paginate', 'IndexController@paginate');
+
+    Route::prefix('paypal')->group(function(){
+        Route::get('payment', 'PayPalController@payment')->name('payment');
+        Route::get('cancel', 'PayPalController@cancel')->name('payment.cancel');
+        Route::get('payment/success', 'PayPalController@success')->name('payment.success');
+    });
+
+
+
 
    /* Route::resource('/client/contact/clinique', 'ClientContactMedecinCliniqueController');
     Route::resource('/client/contact/clinique/form/receiving', 'ReceivingCliniquedataController');
@@ -79,6 +95,10 @@ Route::resource('admin/posts', 'AdminPostsController');*/
 
     Route::resource('admin/medecin/available', 'MedecinDisponibilityController');
 
+    Route::get('/admin/profile', 'UsersProfileController@show');
+    Route::get('/admin/profile/{id}/edit', 'UsersProfileController@edit');
+    Route::PATCH('/admin/profile/{id}', 'UsersProfileController@update');
+
     });
 
     Route::group(['middleware' => ['admin', 'auth']], function (){
@@ -87,6 +107,7 @@ Route::resource('admin/posts', 'AdminPostsController');*/
         Route::resource('admin/posts', 'AdminPostsController');
         Route::resource('admin/ville', 'AdminVilleController');
         Route::resource('admin/quartier', 'AdminQuartierController');
+        Route::resource('admin/arrondissement', 'AdminArrondissementController');
         Route::get('/home', 'HomeController@index');
         Route::resource('/admin/roles', 'AdminRolesController');
         Route::resource('/admin/payments', 'PaymentController');
@@ -105,6 +126,8 @@ Route::resource('admin/posts', 'AdminPostsController');*/
         Route::resource('admin/vehicule', 'AdminVehiculesController');
 
         Route::get('quartier/get/{id}', 'AdminMedecinController@getStates');
+
+        Route::get('arrondissement/get/{id}', 'AdminQuartierController@arrondissement');
 
         Route::resource('admin/medecin', 'AdminMedecinController');
 

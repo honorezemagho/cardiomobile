@@ -2,9 +2,14 @@
 @section('content')
     <h1 style="text-align: center">  Editer le profil du Médecin </h1>
 
-
     <div class="row">
+        <div class="row">
 
+            <div class="col-sm-3">
+
+                <img src="{{$medecin->photo ? $medecin->photo->file: '/images/default.jpg'}}" alt="" class="img-responsive img-rounded">
+
+            </div>
 
         <div class="col-sm-9">
 

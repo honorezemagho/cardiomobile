@@ -17,6 +17,7 @@ class CreateSpecialitiesTable extends Migration
             $table->bigIncrements('id');
             $table->string('speciality');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

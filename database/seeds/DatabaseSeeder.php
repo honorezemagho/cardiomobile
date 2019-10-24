@@ -25,6 +25,8 @@ class DatabaseSeeder extends Seeder
             AvailableTableSeeder::class,
             SpecialityTableSeeder::class,
             MedecinTypeTableSeeder::class,
+            ArrondissementTableSeeder::class,
+            CodeTableSeeder::class,
         ]);
     }
 }

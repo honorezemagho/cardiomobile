@@ -85,7 +85,7 @@ class ClientContactMedecinController extends Controller
 
         else{
             $header = " Contacter Un Médecin";
-            $messages = "Merci de nous avoir contactés, nous vous répondrons sous peu";
+            $messages = "Votre rendez-vous a bien été pris en compte, vous recevrez une confirmation par message";
             return view('Confirm.status', compact('messages', 'header'));
         }
 

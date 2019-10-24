@@ -3,9 +3,13 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Vehicule extends Model
 {
+    use SoftDeletes;
+    protected $dates = ['deleted_at'];
+
     protected  $fillable = ['name', 'owner', 'ville_id', 'quartier_id', 'phone', 'matricule'];
 
     public function quartier(){

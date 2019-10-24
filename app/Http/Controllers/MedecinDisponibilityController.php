@@ -7,6 +7,7 @@ use App\Medecin;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Validation\Rule;
 
 class MedecinDisponibilityController extends Controller
@@ -30,7 +31,8 @@ class MedecinDisponibilityController extends Controller
     public function create()
     {
         //
-        return view('admin.medecindisponibility.create');
+        $medecins = Medecin::pluck('name', 'id')->all();
+        return view('admin.medecindisponibility.create', compact('medecins'));
     }
 
     /**
@@ -46,6 +48,7 @@ class MedecinDisponibilityController extends Controller
             'medecin_id.required' => 'Le Numéro de Transaction est requis!',
             'datetime.required' => 'Date et Heure requis!',
             'quartier_id.required' => 'Le Quartier du médecin est requis!',
+            'price.required' => 'Le prix est requis'
         ];
 
         $request['datetime'] = Carbon::parse($request['datetime'])->toDateTimeString();
@@ -65,6 +68,7 @@ class MedecinDisponibilityController extends Controller
             ],
             'datetime' => 'required|date',
             'quartier_id' => 'required',
+            'price' =>  'required'
 
         ], $message);
 
@@ -97,6 +101,10 @@ class MedecinDisponibilityController extends Controller
     public function edit($id)
     {
         //
+        //
+        $available = Available::findOrFail($id);
+
+        return view('admin.medecindisponibility.edit', compact('available'));
     }
 
     /**
@@ -109,6 +117,44 @@ class MedecinDisponibilityController extends Controller
     public function update(Request $request, $id)
     {
         //
+
+        $message = [
+            'medecin_id.required' => 'Le Numéro de Transaction est requis!',
+            'datetime.required' => 'Date et Heure requis!',
+            'quartier_id.required' => 'Le Quartier du médecin est requis!',
+            'price.required' => 'Le prix est requis'
+        ];
+
+        $request['datetime'] = Carbon::parse($request['datetime'])->toDateTimeString();
+
+        $request['quartier_id'] = Medecin::where('id', $request['medecin_id'])->value('quartier_id');
+
+        $request['type_id'] = Medecin::where('id', $request['medecin_id'])->value('type_id');
+
+        $request['speciality_id'] = Medecin::where('id', $request['medecin_id'])->value('speciality_id');
+
+
+        $data = $request->validate([
+            'medecin_id' => [
+                'required',
+                Rule::exists('medecins', 'id')->where(function ($query) use ($request) {
+                    $query->where('id',$request['medecin_id']);
+                }),
+            ],
+            'datetime' => 'required|date',
+            'quartier_id' => 'required',
+            'price' =>  'required'
+
+        ], $message);
+
+       $medecin = Available::findOrFail($id);
+
+        $input = $request->all();
+
+        $medecin->update($input);
+
+        return redirect('admin/medecin/available');
+
     }
 
     /**
@@ -120,5 +166,12 @@ class MedecinDisponibilityController extends Controller
     public function destroy($id)
     {
         //
+        $available = Available::findOrFail($id);
+
+        $available->delete();
+
+        Session::flash('deleted_disponibility', 'Disponibilité supprimée avec succès');
+
+        return redirect('admin/medecin/available');
     }
 }

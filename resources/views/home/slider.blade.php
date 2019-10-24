@@ -6,9 +6,9 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="home-content pt-90">
-                            <h1 class="text-white text-uppercase font-40">CARDIO<span class="text-theme-colored">MOBILE</span></h1>
+                            <h1 class="text-white text-uppercase font-40"><span class="text-theme-colored">CARDIOMOBILE</span></h1>
                             <h5 class="text-white font-weight-400">La Solution N°1 Camerounaise dédié à votre santé CARDIOVASCULAIRE</h5>
-                            <a class="btn btn-colored btn-theme-colored btn-flat mt-15" href="/itineraire/create">COMMANDER UNE AMBULANCE</a>
+                            <a class="btn btn-colored btn-theme-colored btn-flat mt-15" href="#">COMMANDER UNE AMBULANCE</a>
                         </div>
                     </div>
 
@@ -70,6 +70,7 @@
 
                              <div class="form-group mb-10 text-theme-colored text-center">
 
+                                 <span>Veuillez choisir une option</span>
                                         <div class="custom-control custom-radio mb-10">
                                             <input class="custom-control-input" type="radio" name="urgence_type" id="example-radio2" value="clinique">
                                             <label class="custom-control-label" for="clinique">
@@ -146,12 +147,14 @@
         </div>
 
     <script src="{{ asset('js/custom.js') }}"></script>
-    <script src="{{ asset('datepicker/js/tail.datetime-full.min.js') }}"></script>
-    <script src="{{ asset('datepicker/js/tail.datetime.js') }}"></script>
+  {{--  <script src="{{ asset('datepicker/js/tail.datetime-full.min.js') }}"></script>
+    <script src="{{ asset('datepicker/js/tail.datetime.js') }}"></script>--}}
+
+{{--
     <script>
         tail.DateTime("#datetimeDemo", {
+           classNames: "theme-default",
             static: "#datetime-demo-holder",
-            classNames: "theme-default",
             startOpen: false,
             stayOpen: false,
             dateFormat: 'dd-mm-YYYY',
@@ -171,4 +174,6 @@
         })
         var month = new Date().getMonth();
     </script>
+--}}
+
 </section>

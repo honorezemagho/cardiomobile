@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1 style="text-align: center">Paiements</h1>
+    <h1 style="text-align: center"> Prix </h1>
 
     <table class="table">
         <thead>

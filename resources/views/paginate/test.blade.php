@@ -13,6 +13,20 @@
                 use Carbon\Carbon;
                 $locale = 'fr_FR';
                 $speciality_id = $data['speciality_id'];
+
+             /*   $response = [
+                    'pagination' => [
+                        'total' => $data->total(),
+                        'per page' => $data->perPage(),
+                        'current_page' => $data->currentPage(),
+                        'last_page'  => $data->lastPage(),
+                        'from' => $data->firstItem(),
+                        'to' => $data->lastItem()
+                    ],
+                    'data' => $data
+                ];
+
+                return response()->json($response);*/
                 ?>
 
 
@@ -20,6 +34,7 @@
 
 
     <h3 class="mt-0 text-white mb-10 text-center">Choisir le rendez-vous</h3>
+
 
     @forelse($data as $available)
     @if ($loop->first)

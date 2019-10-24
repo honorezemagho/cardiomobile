@@ -27,6 +27,7 @@ class CreateItinerairesTable extends Migration
             $table->integer('transaction_id');
             $table->string('expires')->default(0);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

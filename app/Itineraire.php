@@ -1,19 +1,17 @@
 <?php
 
 namespace App;
-use App\Quartier;
-use App\Ville;
-use App\Structure;
-use App\Hopital;
-use App\Medecin;
-use App\Vehicule;
-use App\Ambulance;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Itineraire extends Model
 {
     //
+
+    use SoftDeletes;
+    protected $dates = ['deleted_at'];
+
     protected $fillable = ['name','quartier_id_start', 'ville_id_start', 'quartier_id_stop', 'ville_id_stop', 'phone', 'description
     , confirm_matricule, confirm_phone, transaction_id, erxpires'];
 

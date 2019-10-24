@@ -3,12 +3,16 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 
 class Medecin extends Model
 {
+
+    use SoftDeletes;
+
     protected $fillable = ['name', 'ville_id', 'quartier_id', 'phone', 'matricule', 'email', 'quartier_medecin_id', 'datetime'
-    , 'speciality_id', 'type_id'];
+    , 'speciality_id', 'type_id', 'code_id', 'hopital_id', 'photo_id'];
     protected $dates = [
         'created_at',
         'updated_at',
@@ -40,6 +44,10 @@ class Medecin extends Model
         return $this->belongsTo('App\Role');
     }
 
+    public  function  code(){
+
+        return $this->belongsTo('App\Code');
+    }
 
     public  function  speciality(){
 
@@ -49,6 +57,16 @@ class Medecin extends Model
     public  function  type(){
 
         return $this->belongsTo('App\MedecinsType', 'type_id');
+    }
+
+    public  function  hopital(){
+
+        return $this->belongsTo('App\Hopital');
+    }
+
+    public  function  photo(){
+
+        return $this->belongsTo('App\Photo');
     }
 
 }

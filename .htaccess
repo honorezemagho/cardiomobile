@@ -14,3 +14,8 @@ css text/javascript application/javascript
 #Don't compress images
 SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dontvary
 </IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>

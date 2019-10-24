@@ -22,6 +22,7 @@ class CreateAmbulancesTable extends Migration
             $table->string('matricule');
             $table->integer('phone')->index()->unsigned()->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
